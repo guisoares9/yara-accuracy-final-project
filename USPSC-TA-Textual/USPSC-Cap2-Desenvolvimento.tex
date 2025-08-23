@@ -1,0 +1,156 @@
+%% USPSC-Cap2-Desenvolvimento.tex 
+
+% ---
+% Este capítulo, utilizado por diferentes exemplos do abnTeX2, ilustra o uso de
+% comandos do abnTeX2 e de LaTeX.
+% ---
+
+\chapter{Development}\label{development}
+
+\section{Monitoring phase}
+
+% start with processes
+% patient is monitored with EEG, CT and MRI images are scanned, the epilepsy type is categorized to gather evidences and more information
+% based on the eeg data, crysis symptoms and other informations, the SEEG surgery is evaluated as possible solution. If proceeding with SEEG, the electrodes entry and target points are defined with the goal to obtain measurements of the candidates regions using the CT and MRI volumes. The planning procedure is performed using Yara Neuronav interface with tools for electrode placement, electrode dimensions and specifications, parallel and orthogonal visualization of the trajectory for safe placement without damaging critical structures such as large arteries and veins.
+All procedures begin with collecting patient data, including monitoring the manifestations of seizures and collecting medical images. This phase is essential for the diagnosis and understanding of the patient's symptoms, as well as the initial triage for the classification of seizure type. The patient history is listened to understand the past seizures symptoms. Data collection can start by imaging scan in inter-ictal periods using PET-CT. Video-EEG is a candidate for the better understanding of the seizure symptoms as well as the initial guess of the epleptogenic zone. SPECT scan can be performed during the ictal period to help the diagnosis.
+
+During this monitoring phase, the patient can stay in the hospital for a couple of days until the diagnosis is completed, and a possible treatment is planned. In general, 70\% of the patients get free from seizures by the medication prescription. However, the other group doesn't get the same result, falling into the drug-resistant group. In those situations, the surgical treatment is the most viable option and the invasive methods are considered, such as SEEG or ECoG. As discussed in Sec. \ref{sec:seeg-methods}, the SEEG method has benefits over the ECoG. Once SEEG method is selected, Yara robot can help the surgery starting from the electrode trajectory planning (a.k.a SEEG planning).
+
+
+% eeg
+
+
+\section{SEEG Planning phase}
+
+The Yara NeuroNav interface is prepared to SEEG planning. This interface was developed to address neurosurgeons and neurologist needs during the planning. The goal of the planning is to select target points that make the electrodes cross the most probable chance to be the epileptogenic zone. Entry points needs to be selected in a manner that the electrode trajectory is safe and follow a path without the collision with critical structures such arteries or eloquent regions of the brain. Typically, electrodes have between 5 and 15 contacts along the depth, spaced by A couple of millimeters. Between 5 and 10 electrodes are placed in the SEEG procedure.
+
+To perform the plan, it is necessary to have a detailed visualization of the internal structures such as the brain, skull, and vascularization. Hence, CT and MR with and without contrast are performed. To allow a complete visualization in the same reference frame, a common approach is to perform the Image Fusion, aligned the scans to have the same reference frame. This alignment allows the overlap of the scans, improving the interpretation of the internal structures, consequently helping the SEEG plan for the safety and for a better decision on each electrode position.
+
+\subsection{Image Fusion}
+
+Yara NeuroNav applied an Image Fusion method presented on \cite{klein2009evaluation}. The goal is to minimize metrics such as volume similarity, distance similarity to find the best transformation between one source image and one target image. Since scan are sequences of images, slices in each human body axis, the method is applied for each image to find a global transformation using specific optimization approaches. For human registration between CT-CT, CT-MRI and MRI-MRI, the method performed correctly after few parameters tuning with acceptable volume similarity. We focused on the visualization features, which allowed the user to run the method to overlap the scans, modify fusion parameters and the transparency accordingly. 
+
+% TODO
+% Figure \ref{} shows an example of CT-MRI image fusion for a 9-years old patient.
+
+\subsection{Electrode placement}
+
+After the analysis of the images, electrodes can be planned by determining the entry and target points, the type of electrode containing basic information such as spacing, coordinates, number of contacts, and the dimensions of each electrode. This is step is performed a couple of days before the surgery, the planned electrode is saved and loaded on the day of the surgery to the interface. Small adjustments can be performed during the surgery if needed.
+
+% talk about Slicer Ants
+% Our system uses 3D Slicer as the basis for the implementation \footnote{https://www.slicer.org/}, which allows the rendering MR, CT and 3D models properly. In this manner, several tools are available to the doctors, enabling an accurate analysis of the possible regions under investigation and the correct planning of each electrode.
+
+% The registration starts with the the surgeon by taking fiducial points on the patient skin, the ICP method is used to calculate the transformation between the Scan space to the robot space
+
+\section{Robot-Scan Registration phase}
+
+With the planning completed, and the surgical room equipped with our system integrated with the robot, it is necessary to perform a registration before starting the operation. This is because the interface and the robot do not share the same coordinate space. Therefore, it is necessary to align the two vector bases of the systems for the positions of the previously created markups to be passed to the collaborative robot. By definition, this practice is called registration, which is based on the idea of determining an operation that aims to transform points from one vector system to another system \cite{HAWKES2001}. In the application described in this article, intermodality registration was used, involving the alignment of coordinate systems from various acquisitions.
+
+The procedure involves identifying multiple fixed points known as fiducial points in the interface, which are then correlated with points obtained from the patient using the robotic manipulator. When touching the target point with the tool developed by the team, the operator interacts with the robot's flange button located on the seventh joint of the manipulator. The interface points are then sent to the robot's control module, which applies the Iterative Closest Point (ICP) Algorithm. For this, the robot and the Yara system controller communicates via TCP network, with categories of messages and commands that share the necessary data.
+
+% TODO, its not the ICP, its the umeyama
+Expanding on the ICP method by \cite{slambook}, the goal is to find the matrix \textbf{R} and vector \textbf{t} that best solves the Euclidean transformation \ref{eq:icp} given a matched set of 3D points like $\textbf{P}=\{\textbf{p1}, ... , \textbf{p}_n\}$ and $\textbf{P'}=\{\textbf{p'1}, ... , \textbf{p'}_n\}$.
+
+\begin{equation}
+    \forall i, \textbf{p}_i = \textbf{Rp'}_i+ \textbf{t} 
+    \label{eq:icp}
+\end{equation}
+
+The procedure is to select fiducial landmarks, distinguished points on the patient face, in the CT/MR and hand guide the robot in the physical space, with the correct order. The sets correspond to at least 3 points each, for example, the two temples and the nasion, and they're used to indicating the correlation between the two sets. A transformation ${}^{robot}T_{scan}$ is calculated that minimizes the reprojection error and best aligns the CT/MR space with the real scenario in the operating room.
+
+The reprojection error is computed by transforming the fiducial points in the source space to the target space (robot space) and comparing with the collected fiducials in the target space (Equation \ref{eq:reproj}).
+
+\begin{align} \label{eq:reproj}
+^{robot}P_{c\;proj} = {}^{robot}T_{scan} \; {}^{robot}P_{c\;scan} \\
+Reproj = || {}^{robot}P_{c\;robot} - {}^{robot}P_{c\;proj} ||
+\end{align}
+
+\section{SEEG Operation phase}
+
+The next step is to place the electrodes in the patient. Continuous communication between the neuronavigator and the robot is essential, allowing the neurosurgeon to determine the sequence of each insertion. As previously mentioned, communication between the interface and the robot's control system occurs over a dedicated network. The control module utilizes ROS framework\footnote{http://wiki.ros.org/noetic} to connect the subsystems, which is the manipulator controller (KUKA Sunrise) developed in Java. This integration uses the TCP/IP communication protocol provided by the robot's API (a feature not present in all robotic systems manipulators).
+
+Moreover, the communication system enabled the development of advanced features for the neuronavigator, such as real-time transmission of the tool's position, transformed to the interface's coordinate system, control of the robot’s joint positions, and the provision of the distance between the target point and the tool’s starting point. These features significantly improve user visibility and procedural precision.
+
+In the operating room, the operator must exercise great care, as it is a highly controlled environment where their actions can potentially harm the patient, other individuals, or equipment. Therefore, implementing safety logic is crucial to prevent any unforeseen incidents. The Yara system presents a digital twin of the robot within the interface. This digital twin allow the clinicians to understand the robot space during the operation. Furthermore, each planned movement is presented and requested approval to continue. This is a fundamental procedure to perform each step of the surgical process with safety.
+
+Yara system helps the surgeon on the drilling process by providing the precise depth of the drill that is safe, crossing just the skull bone and not reaching the brain tissue. After that, the surgeon places a drill guide that will guide and fix the electrode in the right direction. Finally, the interface shows the exact depth that the surgeon needs to introduce the electrode, to reach the desired region inside the brain.
+
+\section{Accuracy Evaluation}
+
+As discussed in Section \ref{sec:seeg-methods}, an SEEG method must be sufficiently accurate to place each electrode on the planned position and orientation. The accuracy can be measured by 
+the Euclidean distance between the planned entry point and the entry point achieved after the surgery. The same method applies to the target point. The angle between the entry to target vector $\vec{P_{target}} - \vec{P_{entry}}$ for the planned electrodes and the post surgery electrodes reflects the orientation error. SOTA methods show that frame-based methods reach XX mm TODO 
+
+Yara can perform all the necessary steps for the surgery. This state was achieved through a partnership between the development team and frequent evaluations of the system with the neurosurgery group at HCFMRP-USP. To meet the accuracy requirements to perform SEEG surgeries, we measured the system's accuracy using two methods: 1: insertion of electrodes into a synthetic brain and 2: insertion of rods into a measuring template (\textit{phantom}). 
+
+\subsection{Accuracy assessment with synthetic brain}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{USPSC-img/sintetic-brain.png}
+    \caption{Model with synthetic brain for performing simulated surgery and evaluating the system.}
+    \label{fig:sintetic}
+\end{figure}
+
+
+Tests with a synthetic brain were carried out by 3D printing the surface of a patient's head (in accordance with research use), together with a hemisphere of the brain produced with silicone material, aiming to imitate the consistency of the organ. This specific patient underwent SEEG surgery at HCFMRP using the Leksell (i.e., non-robotic surgery). Tomography and magnetic resonance images and the surgical planning used in the surgery were used to replicate the surgery using the robot. The procedure was carried out successfully with the insertion of nine electrodes.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{USPSC-img/sintetic-brain-ct.png}
+    \caption{Comparison between preoperative and postoperative images for evaluation of surgery and calculation of trajectory errors.}
+    \label{fig:sintetic-ct}
+\end{figure}
+
+After the operation, the model was taken to the tomography to acquire images that show the internal positioning of the electrodes. Through this, it was possible to compare the positioning of the inserted electrodes with the surgery planning, seeking to calculate the system error. As presented in Section \ref{sec:methods}, the error between the planned entry and target points and those achieved postoperatively are evaluation metrics for SEEG surgery and were calculated in this process. Figure \ref{fig:synthetic} shows the synthetic model developed during the operation and performing the tomography. The comparison between the planned and achieved electrodes with the fusion of the postoperative CT with the preoperative images (Figure \ref{fig:sintetic-ct}) allows the calculation of Euclidean distances between the planned and achieved trajectories and, therefore,, allows the evaluation of the system's accuracy (Table \ref{tab:synthetic-errors}).
+
+The precision achieved in methods using the stereotaxic apparatus (Leksell, CRW) reported in \cite{girgis2020superior} on average is 7.1 mm for the entry point and 8.5 mm for the target point. Therefore, the results acquired with robotic surgery with 1.30 mm input and 3.07 mm target meet expectations and are sufficient to perform SEEG surgery. To complement the evaluation, we carried out tests using a method that allows repetition in a simpler way, by using a target template to compare the planned target point and the one achieved (Figure \ref{fig:phantom}). This system does not require the tomography stage and the manufacturing of synthetic brains, reducing the cost of each test and improving the logistics and speed of testing.
+
+ \begin{table}
+ \centering
+ \begin{tabular}{|c|ccccccc|cc|}
+ Electrode & 1 & 2 & 3 & 4 & 5 & 6 & 7 & Mean & Std. \\
+ $\Delta$Entry (mm) & 1.47 & 1.81 & 1.58 & 1.71 & 0.56 & 0.95 & 1.04 & 1.30 & 0.25 \\
+ $\Delta$Target(mm) & 2.57 & 2.62 & 3.72 & 2.26 & 4.88 & 3.48 & 1.97 & 3.07 & 0.25 \\
+ \end{tabular}
+ \caption{Error in positioning the entry and target points planned and reached after surgery using a synthetic brain model.}
+ \label{tab:synthetic-errors}
+ \end{table}
+
+\subsection{Accuracy assessment with SEEG \textit{phantom}}
+
+To validate the accuracy of the system using \textit{phantom}, the 3D printed surface of the patient's head was used and, instead of using a synthetic brain, a base containing cylinders with a conical top was produced. The tops of each cone were used as target points so that the system must reach them with a thin metal rod that represents the electrode. The planning stage is carried out so that the input points are arbitrary and distributed across the entire surface of the skull for greater variability, and the target points are points located on the peaks of the cones. The registration stage is carried out using fiducials on the surface of the patient's head (similar to validation with a synthetic brain). In the operation process, the robot positions itself at each electrode, the interface shows the length at which the drill limit switch must be positioned, and the hole is drilled. The length of the guide to the target point is calculated by the interface, and a rod of the correct length is inserted.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{USPSC-img/phantom.png}
+    \caption{\textit{Phantom} produced with cylinders with a conical top for error measurement using a stereo camera.}
+    \label{fig:phantom}
+\end{figure}
+
+To evaluate the positioning, a stereo camera was used, allowing the calculation of the distances between the target points reached (tip of the rod) and the planned target points (peaks of the cones). Using stereoscopy, it was possible to measure the necessary measurements with a measurement error of maximum 0.31 mm. Nine electrodes were inserted followed by target error measurement was performed. Figure \ref{fig:phantom} presents the model with \textit{phantom} and Figure \ref{fig:phantom-rs} presents images from the stereo camera used to calculate the error. Table \ref{tab:phantom-errors} presents the target error for each electrode, resulting in an average error of $1.82 \pm 0.21$ mm.
+
+\begin{table}
+ \centering
+ \begin{tabular}{|c|ccccccccc|cc|}
+ Electrode & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & Mean & Std. \\
+ $\Delta$Target (mm) & 1.52 & 1.35 & 2.7 & 1.6 & 2.49 & 2.31 & 1.1 & 1.85 & 1.43 & 1.82 & 0.21 \\
+ \end{tabular}
+ \caption{Error in the positioning of target points planned and reached after surgery using a model with \textit{phantom} and stereo camera to measure distances.}
+ \label{tab:phantom-errors}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{USPSC-img/phantom-rs-sample.png}
+    \caption{Examples of images generated by the stereo camera for measuring the distance between the reached point and the planned target.}
+    \label{fig:phantom-rs}
+\end{figure}
+
+
+% The current state of the system is presented as the progress made during the developments carried out since the beginning of the research. The system features an advanced interface, with the possibility of importing CT and MR volumes, planning electrodes, performing registration and positioning the robot for electrode insertion. For this process to occur successfully, it was necessary to develop a direct and inverse kinematic system using the robot's geometry, a trajectory planning system with obstacle avoidance for safe movement of the robot, and a communication system between the neuronavigator and the control system. The accuracy was measured 
+
+ % talk more about the current system
+ % In short,
+
+% the
