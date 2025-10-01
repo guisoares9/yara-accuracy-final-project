@@ -23,11 +23,6 @@
 \textbf{WikiJournal of Medicine}, v.~1, n.~2, 2014.
 ISSN 2002-4436.}
 
-\bibitem[{Brainlab} Accessed: 2024-04-14]{brainlab}
-\abntrefinfo{{Brainlab}}{{Brainlab}}{Accessed: 2024-04-14}
-{{Brainlab}. \textbf{{Cranial Planning}}. Accessed: 2024--04--14.
-  \url{https://www.brainlab.com/surgery-products/overview-neurosurgery-products/cranial-planning/}.}
-
 \bibitem[Cardinale Francesco~MD \textit{et al.}
   2013]{cardinale2013stereoelectroencephalography}
 \abntrefinfo{Cardinale Francesco~MD \textit{et al.}}{CARDINALE FRANCESCO~MD
@@ -99,6 +94,15 @@ Available at: \url{https://doi.org/10.1016/j.wneu.2019.04.143}.}
 \textbf{Epilepsia}, v.~59, p. 1667--1675, 2018.
 ISSN 15281167.}
 
+\bibitem[Kaewborisutsakul \textit{et al.} 2024]{kaewborisutsakul2024usefulness}
+\abntrefinfo{Kaewborisutsakul \textit{et al.}}{KAEWBORISUTSAKUL \textit{et
+  al.}}{2024}
+{KAEWBORISUTSAKUL, A. \textit{et al.} Usefulness of robotic stereotactic
+  assistance (rosa{\textregistered}) device for stereoelectroencephalography
+  electrode implantation: A systematic review and meta-analysis.
+\textbf{Neurologia medico-chirurgica}, The Japan Neurosurgical Society, v.~64,
+  n.~2, p. 71--86, 2024.}
+
 \bibitem[Kajita \textit{et al.} 2015]{kajita2015installation}
 \abntrefinfo{Kajita \textit{et al.}}{KAJITA \textit{et al.}}{2015}
 {KAJITA, Y. \textit{et al.} Installation of a neuromate robot for stereotactic
@@ -127,36 +131,10 @@ Available at: \url{https://doi.org/10.2176/nmc.tn.2015-0043}.}
 ISBN 9783540699590. Available at:
   \url{https://books.google.com.br/books?id=cnF-2KCeR1sC}.}
 
-\bibitem[Mack 2001]{minimal}
-\abntrefinfo{Mack}{MACK}{2001}
-{MACK, M.~J. {Minimally Invasive and Robotic Surgery}.
-\textbf{JAMA}, v.~285, n.~5, p. 568--572, 02 2001.
-ISSN 0098-7484.
-Available at: \url{https://doi.org/10.1001/jama.285.5.568}.}
-
 \bibitem[Mazoyer 2008]{mazoyer2008memoriam}
 \abntrefinfo{Mazoyer}{MAZOYER}{2008}
 {MAZOYER, B. In memoriam: Jean talairach (1911-2007): a life in stereotaxy.
 \textbf{Human brain mapping}, v.~29, n.~2, p. 250--252, Feb 2008.}
-
-\bibitem[{Medtronic} Accessed: 2024-04-14]{medtronic}
-\abntrefinfo{{Medtronic}}{{Medtronic}}{Accessed: 2024-04-14}
-{{Medtronic}. \textbf{{Stealth AutoGuide}}. Accessed: 2024--04--14.
-  \url{https://europe.medtronic.com/xd-en/healthcare-professionals/products/neurological/cranial-robotics/stealth-autoguide.html}.}
-
-\bibitem[Meng, Ding and Wang 2014]{Meng2014}
-\abntrefinfo{Meng, Ding and Wang}{MENG; DING; WANG}{2014}
-{MENG, F.; DING, H.; WANG, G. A stereotaxic image-guided surgical robotic
-  system for depth electrode insertion. \textit{In}:  \textbf{2014 36th Annual
-  International Conference of the IEEE Engineering in Medicine and Biology
-  Society}. [\textit{S.l.: s.n.}], 2014. p. 6167--6170.}
-
-\bibitem[{Mevis Medical Solutions AG} Accessed: 2024-04-14]{mevis}
-\abntrefinfo{{Mevis Medical Solutions AG}}{{Mevis Medical Solutions
-  AG}}{Accessed: 2024-04-14}
-{{Mevis Medical Solutions AG}. \textbf{{MNPS 2 - MEVIS Neurosurgical Planning
-  System}}. Accessed: 2024--04--14.
-  \url{https://www.mevis.com.br/mnps-2.html}.}
 
 \bibitem[Miller and Hakimian 2013]{miller2013surgical}
 \abntrefinfo{Miller and Hakimian}{MILLER; HAKIMIAN}{2013}
@@ -164,24 +142,11 @@ Available at: \url{https://doi.org/10.1001/jama.285.5.568}.}
 \textbf{Continuum (Minneap Minn)}, v.~19, n. 3 Epilepsy, p. 730--742, Jun
   2013.}
 
-\bibitem[Morrell \textit{et al.} 2021]{morrell2021history}
-\abntrefinfo{Morrell \textit{et al.}}{MORRELL \textit{et al.}}{2021}
-{MORRELL, A. L.~G. \textit{et al.} The history of robotic surgery and its
-  evolution: when illusion becomes reality.
-\textbf{Revista do Col{\'e}gio Brasileiro de Cirurgi{\~o}es}, SciELO Brasil,
-  v.~48, p. e20202798, 2021.}
-
 \bibitem[Ngugi \textit{et al.} 2010]{ngugi2010estimation}
 \abntrefinfo{Ngugi \textit{et al.}}{NGUGI \textit{et al.}}{2010}
 {NGUGI, A. \textit{et al.} Estimation of the burden of active and life-time
   epilepsy: a meta-analytic approach.
 \textbf{Epilepsia}, Wiley, v.~51, n.~5, p. 883--890, 2010.}
-
-\bibitem[{Renishaw} Accessed: 2024-04-14]{renishaw}
-\abntrefinfo{{Renishaw}}{{Renishaw}}{Accessed: 2024-04-14}
-{{Renishaw}. \textbf{{Neuroinspire Neurosurgical Planning Software}}. Accessed:
-  2024--04--14.
-  \url{https://www.renishaw.com/en/neuroinspire-neurosurgical-planning-software--8244}.}
 
 \bibitem[Rojas-Villabona \textit{et al.} 2016]{rojas2016eval}
 \abntrefinfo{Rojas-Villabona \textit{et al.}}{ROJAS-VILLABONA \textit{et
@@ -211,5 +176,18 @@ Available at: \url{https://doi.org/10.1001/jama.285.5.568}.}
 ISSN 1662-453X.
 Available at:
   \url{https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1203059}.}
+
+\bibitem[Zeng \textit{et al.} 2017]{zeng2017surgical}
+\abntrefinfo{Zeng \textit{et al.}}{ZENG \textit{et al.}}{2017}
+{ZENG, B. \textit{et al.} A surgical robot with augmented reality visualization
+  for stereoelectroencephalography electrode implantation.
+\textbf{International journal of computer assisted radiology and surgery},
+  Springer, v.~12, n.~8, p. 1355--1368, 2017.}
+
+\bibitem[Zheng \textit{et al.} 2021]{zheng2021robot}
+\abntrefinfo{Zheng \textit{et al.}}{ZHENG \textit{et al.}}{2021}
+{ZHENG, J. \textit{et al.} Robot-assisted versus stereotactic frame-based
+  stereoelectroencephalography in medically refractory epilepsy.
+\textbf{Neurophysiologie Clinique}, Elsevier, v.~51, n.~2, p. 111--119, 2021.}
 
 \end{thebibliography}

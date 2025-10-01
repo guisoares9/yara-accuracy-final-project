@@ -1,8 +1,47 @@
 %% USPSC-Cap3-Conclusao.tex
 % ---
-% Conclusão
+% Discussão e Conclusão
 % ---
-\chapter{Conclusion}
+\chapter{Discussion and Conclusion}
 % ---
 
-This chapter encapsulates the culmination of the research and development efforts dedicated to the Yara system, a novel robotic platform designed to enhance the precision and safety of Stereoelectroencephalography (SEEG) procedures. Throughout this work, we have meticulously detailed the intricate phases involved, from the initial patient monitoring and comprehensive SEEG planning to the critical robot registration and the precise execution of the surgical operation. Furthermore, a rigorous accuracy evaluation was conducted to validate the system's efficacy and reliability. The successful integration of advanced imaging techniques, sophisticated planning tools, and a collaborative robotic arm represents a significant stride towards improving outcomes for patients with drug-resistant epilepsy, offering a more controlled and accurate approach to electrode placement.
+% TODO: table
+The literature indicates that frame-based SEEG procedures can achieve a maximum entry point error (EPE) of 7.1 mm and target point error (TPE) of 8.5 mm, as documented in \cite{girgis2020superior}. Some studies have observed lower average errors, with EPE values of 1.51 mm and TPE values of 1.59 mm, which may be related to variations in surgical technique, image fusion accuracy, or other procedural factors. Robotic-assisted SEEG procedures have demonstrated comparable accuracy, with reported EPE and TPE values of 1.38 mm and 1.54 mm, respectively \cite{zheng2021robot}. The meta-analysis presented in \cite{vasconcellos2023robotic} compared four robots, showing slightly greater TPE for ROSA and Neuromate than for other systems. Table \ref{} summarized accuracy reports by those studies. In terms of operative duration, robotic-assisted surgeries have been shown to be more efficient, with an average time of 127 minutes compared to 152 minutes for frame-based methods \cite{zheng2021robot}.
+
+The conical targets phantom focused on evaluating the target error caused by intrinsic sources. These sources are defined as the internal aspects of the systems that can generate inaccuracies, such as the robot's kinematics, the end effector tool tolerances, robot cart movements and vibrations, and the registration method. Since no electrode insertion was performed, errors related to the surgical procedure, such as brain shift and electrode bending, were not present in the results. The phantom tests resulted in an average TPE of 1.8 mm, which are comparable to the values reported in the literature for robotic-assisted SEEG procedures.
+
+The synthetic brain phantom test was designed to assess the overall system accuracy by incorporating both intrinsic and extrinsic sources of error in a controlled environment. Extrinsic factors include procedural elements such as electrode bending, manual depth measurement inaccuracies, and interactions between the electrode and the synthetic brain material. The results indicated an average EPE of 1.3 mm and TPE of 3.1 mm. While the EPE is consistent with values reported for robotic-assisted SEEG procedures in the literature, the slightly elevated TPE may be attributed to these additional extrinsic factors, particularly the friction and adherence between the electrode and the synthetic brain, which could have contributed to deviations during insertion.
+
+% analysis
+The frame-based errors observed in this study (Sec. \ref{sec:synthetic-or}) were higher than other studies \cite{zheng2021robot}, primarily attributed to inaccuracies in the depth dimension. These discrepancies may be related to the properties of the synthetic brain model made of alginate, which may not perfectly replicate the mechanical resistance and consistency of real brain tissue. Additionally, a systematic error may have been introduced during the manual calculation of the insertion depth, further contributing to the deviation between planned and achieved electrode positions. Since the focus of this work was not on the frame-based method, a detailed analysis of these deviations was not conducted.
+
+% robotic surgery
+The simulation of the robotic-assisted method using the synthetic brain in OR (Sec. \ref{sec:synthetic-or}) resulted in an average EPE of 3.1 mm and TPE of 5.8 mm, which are higher than those observed in previous phantom experiments. This increase is likely due to additional extrinsic factors present in the OR environment. Notably, the Mayfield head clamp used in this setting was longer than the one employed in earlier tests, causing the structure to bend more during skull drilling. This increased bending contributed to higher EPE values, altered the entry angle, and consequently affected the TPE. To minimize this source of error, future designs could incorporate a more rigid and stable connection between the robot base and the patient's head.
+
+
+% article that shows high errors with ROSA, the same also talks about the SEEG requirement that is hypothesis driven and not anatomically driven as DBS
+As highlighted in \cite{zheng2021robot}, SEEG procedures are fundamentally hypothesis-driven. In this context, "hypothesis" refers to the clinical reasoning process in which specific brain regions are targeted for electrode implantation based on preoperative evaluations—such as seizure semiology, imaging, and EEG findings—rather than following fixed anatomical coordinates as in deep brain stimulation (DBS). This approach means that electrode trajectories are planned to test hypotheses about the origin and propagation of epileptic activity, and not solely to reach precise anatomical targets. As a result, the acceptable error margins for SEEG may differ from those in anatomically driven procedures such as DBS, since the clinical objective is to sample relevant brain regions for diagnostic purposes. Each SEEG electrode typically has a contact surface area of approximately 10 mm\textsuperscript{2}, allowing it to record electrical activity from a large population of nearby neurons.
+
+The Yara system represents a significant advancement in robotic assistance for neurosurgery. This work demonstrates Yara's robust performance and reliability, paving the way for its future application in brain biopsy and DBS surgeries. The main contributions include the development of a versatile, cost-effective robotic platform, comprehensive validation using both phantom and synthetic brain models, and the integration of planning and registration methods. With continued validation and clinical trials, Yara has the potential to become widely available in hospitals, offering a safe, precise, and accessible solution for a range of neurosurgical interventions.
+
+
+% presentation idea
+
+% slide 1, drug resistent epilepsy, 30% of patients, SEEG
+% slide 2, SEEG procedure, frame based, robotic assisted
+% slide 3, robotic systems, ROSA, Neuromate
+% slide 4, current accuracy using USP article
+% slide 5, Yara system goal: develop a robot with that accuracy
+% slide 6, Objectives of this work, measure accuracy using phantoms
+% slide 7, electrode planning
+% slide 8, registration method
+% slide 9, conical targets phantom, intrinsic errors
+% slide 10, results conical targets phantom
+% slide 11, synthetic brain phantom, intrinsic + extrinsic errors
+% slide 12, results synthetic brain phantom
+% slide 13, synthetic brain in OR, frame based
+% slide 14, results synthetic brain in OR, frame based
+% slide 15, synthetic brain in OR, robotic assisted
+% slide 16, results synthetic brain in OR, robotic assisted
+% slide 17, discussion, errors, comparison with literature
+% slide 18, conclusion and future works
