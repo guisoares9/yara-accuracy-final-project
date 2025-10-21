@@ -66,6 +66,9 @@ english				% o último idioma é o principal do documento
 % ---
 \usepackage[T1]{fontenc}		% Seleção de códigos de fonte.
 \usepackage[utf8]{inputenc}		% Codificação do documento (conversão automática dos acentos)
+% Handle accidental zero-width characters pasted from editors
+% \DeclareUnicodeCharacter{200B}{} % zero-width space
+% \DeclareUnicodeCharacter{200D}{} % zero-width joiner
 % \usepackage{lmodern}			% Usa a fonte Latin Modern
 % Para utilizar a fonte Times New Roman, inclua uma % no início do comando acima  "\usepackage{lmodern}"
 % Abaixo, tire a % antes do comando  \usepackage{times}
@@ -86,14 +89,14 @@ english				% o último idioma é o principal do documento
 \usepackage[absolute]{textpos} % Pacote permite o posicionamento do texto
 \usepackage{eso-pic}           % Pacote para incluir imagem de fundo
 \usepackage{makebox}           % Pacote para criar caixa de texto
-\usepackage{subfigure}
+% subfigure is obsolete and conflicts with caption; use subcaption instead
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{subfigure}
 
 % fig Tailarach apparatus
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage[runs=2]{auto-pst-pdf}
 
 % ---
 
@@ -151,7 +154,7 @@ english				% o último idioma é o principal do documento
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
-\usepackage{lipsum}				% para geração de dummy text
+%\usepackage{lipsum}				% para geração de dummy text
 % ---
 
 % pacotes de tabelas
@@ -174,8 +177,7 @@ english				% o último idioma é o principal do documento
 % Consulte a tabela referente aos Programas, áreas e opções de sua unidade contante do
 % arquivo USPSC-Siglas estabelecidas para os Programas de Pós-Graduação por Unidade.xlsx 
 % ou nos APÊNDICES A-F
-\siglaunidade{EESC-TCC}
-\programa{EMET}
+
 % Os demais dados deverão ser fornecidos no arquivo USPSC-pre-textual-UUUU ou USPSC-TCC-pre-textual-UUUU, onde UUUU é a sigla da Unidade. 
 % Exemplo:USPSC-pre-textual-IFSC.tex
 % ---
@@ -225,7 +227,8 @@ english				% o último idioma é o principal do documento
 % Início do documento
 % ----
 \begin{document}
-
+\siglaunidade{EESC-TCC}
+\programa{EMET}
 % Seleciona o idioma do documento (conforme pacotes do babel)
 % \selectlanguage{brazil}
 % Se o idioma do texto for inglês, inclua uma % antes do 
@@ -306,7 +309,7 @@ english				% o último idioma é o principal do documento
 % Se for a sua opção elaborar uma folha de aprovação, insira uma % antes do comando acima que inclui o arquivo folhadeaprovacao.pdf,
 % tire o % do comando abaixo e altere o arquivo folhadeaprovacao.tex conforme suas necessidades
 %\include{folhadeaprovacao}
-\includepdf{USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf}
+%\includepdf{USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf}
 
 % ---
 % Dedicatória
