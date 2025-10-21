@@ -5,7 +5,7 @@
 % comandos do abnTeX2 e de LaTeX.
 % ---
 
-\chapter{Development}\label{development}
+\chapter{Methods}\label{methods}
 
 This chapter presents the workflow and methodology underlying the use of the Yara robotic system for SEEG surgery. It begins with patient monitoring and data acquisition (Sec. \ref{sec:monitoring}), then describes the planning phase, including image fusion and electrode placement (Sec. \ref{sec:planning}). The subsequent robot-scan registration phase (Sec. \ref{sec:registration}) addresses the alignment of preoperative imaging with the robotic system. The intraoperative phase (Sec. \ref{sec:operation}) outlines the integration of robotic assistance for electrode insertion. The chapter concludes with the methods and results of system accuracy evaluation and validation (Sec. \ref{method-results}).
 
@@ -46,12 +46,12 @@ Expanding on the ICP method by \cite{slambook}, the goal is to find the matrix \
 
 In this procedure, fiducial landmarks are selected—these are anatomically distinct and reproducible points on the patient's head that can be reliably identified both in the CT/MR images and in the physical space. Commonly used fiducials include the nasion (the indentation between the forehead and the nose), the left and right preauricular points (just in front of each ear), and sometimes additional points such as the tip of the nose or the outer canthi of the eyes. These landmarks are chosen for their ease of identification and minimal movement relative to the skull avoiding soft tissue deformation.
 
-The system computes the transformation ${}^{robot}T_{scan}$ that best aligns the two sets of points, minimizing the reprojection error and ensuring that the planned trajectories in the image space correspond precisely to the patient's anatomy in the real world. The reprojection error is computed by transforming the fiducial points in the source space to the target space (robot space) and comparing with the collected fiducials in the target space (Equation \ref{eq:reproj}).
+The system computes the transformation ${}^{robot}T_{scan}$ that best aligns the two sets of points, minimizing the reprojection error and ensuring that the planned trajectories in the image space correspond precisely to the patient's anatomy in the real world. The reprojection error is computed by transforming the fiducial points in the scan space ($^{scan}P_{virtual}$) to the robot space and comparing with the collected fiducials ($^{robot}P_{real}$) in the target space (Equation \ref{eq:reproj}).
 
 \begin{align} \label{eq:reproj}
-^{robot}P_{c\;proj} = {}^{robot}T_{scan} \; {}^{robot}P_{c\;scan} \\
-Reproj = || {}^{robot}P_{c\;robot} - {}^{robot}P_{c\;proj} ||
+Reproj = || {}^{robot}P_{real} - {}^{robot}T_{scan} \; {}^{scan}P_{virtual} ||
 \end{align}
+
 
 \section{Intra-Operation Phase}\label{sec:operation}
 
@@ -62,7 +62,7 @@ During the drilling process, the Yara system assists the surgeon by displaying t
 % \chapter[Experiments Setup]{Experiments Setup}
 % \label{experiments-setup}
 
-\chapter[Method and Results]{Method and Results}
+\chapter[Method and Results]{Experiments and Results}
 \label{method-results}
 
 As discussed in Sec. \ref{sec:seeg-methods}, an SEEG method must be sufficiently accurate to place each electrode at the planned position and orientation. The accuracy can be measured by 
@@ -114,7 +114,7 @@ Using the Eq. \ref{eq:depth-error}, it was possible to estimate a maximum measur
 \begin{table}
     \centering
     \begin{tabular}{|c|ccccccccc|c|}
-    Electrode & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & Mean \\
+    \textbf{Electrode} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{Mean} \\
     $\Delta$Target (mm) & 1.5 & 1.3 & 2.7 & 1.6 & 2.5 & 2.3 & 1.1 & 1.9 & 1.4 & 1.8 \pm 0.3 \\
     \end{tabular}
     \caption{Error in the positioning of target points planned and reached after surgery using a model with phantom and stereo camera to measure distances.}
@@ -158,7 +158,7 @@ Figure \ref{fig:synthetic} shows the synthetic model developed. The comparison b
  \begin{table}
  \centering
  \begin{tabular}{|c|cccccc|cc|}
- Electrode & 1 & 2 & 3 & 4 & 5 & 6 & 7 & Mean \\
+ \textbf{Electrode} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{Mean} \\
  $\Delta$Entry (mm) & 1.47 & 1.81 & 1.58 & 1.71 & 0.56 & 0.95 & 1.04 & 1.30 \pm 0.25 \\
  $\Delta$Target(mm) & 2.57 & 2.62 & 3.72 & 2.26 & 4.88 & 3.48 & 1.97 & 3.07 \pm 0.25 \\
  \end{tabular}
@@ -201,7 +201,7 @@ For the stereotactic frame procedure, electrode trajectories were planned using 
 \begin{table}[ht]
     \centering
     \begin{tabular}{|c|ccccc|c|}
-        Electrode & 1 & 2 & 3 & 4 & 5 & Mean \\
+        \textbf{Electrode} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{Mean} \\
         $\Delta$Entry (mm) & 1.6 & 2.1 & 1.8 & 3.6 & 5.0 & 2.8 \pm 0.25 \\
         $\Delta$Target (mm) & 8.1 & 16.2 & 11.1 & 15.3 & 13.9 & 12.9 \pm 0.25 \\
     \end{tabular}
@@ -222,15 +222,15 @@ For the robotic procedure, the same preoperative MRI images served as the basis 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.95\textwidth]{USPSC-img/synthetic-phantom-or-ct.png}
-    \caption{Comparison between planned electrode trajectories (red and green lines) and those achieved after surgery (3D contacts in gray) using CT scan of a synthetic brain model in OR with robotic system.}
+    \includegraphics[width=0.95\textwidth]{USPSC-img/synthetic-brain-or-robot-ct.png}
+    \caption{Comparison between planned electrode trajectories (blue lines) and those achieved after surgery (3D contacts in gray) using CT scan of a synthetic brain model in OR with robotic system.}
     \label{fig:synthetic-or-ct-robot}
 \end{figure}
 
 \begin{table}[ht]
     \centering
     \begin{tabular}{|c|cccccc|c|}
-        Electrode & 1 & 2 & 3 & 4 & 5 & Mean \\
+        \textbf{Electrode} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{Mean} \\
         $\Delta$Entry (mm) & 3.1 & 3.7 & 2.9 & 3.2 & 2.6 & 3.1 \pm 0.25 \\
         $\Delta$Target (mm) & 5.8 & 5.9 & 5.8 & 5.9 & 5.5 & 5.8 \pm 0.25 \\
     \end{tabular}

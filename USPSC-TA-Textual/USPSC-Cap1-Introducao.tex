@@ -19,7 +19,7 @@ Robotic systems are increasingly being adopted for intracranial electrode implan
 
 Although SEEG requires precise electrode placement, its accuracy requirements are generally less stringent than those for deep brain stimulation (DBS), which demands submillimeter precision due to the need for targeting specific anatomical nuclei. SEEG, in contrast, is hypothesis-driven and aims to sample broader brain regions based on clinical hypotheses rather than discrete anatomical targets \cite{bonda2021robot}.
 
-SEEG represents a clinically relevant and technically feasible entry point for robotic intervention, given its procedural characteristics and the growing demand for minimally invasive, accurate, and efficient electrode implantation in epilepsy surgery. Accordingly, this work focuses on the development and evaluation of a collaborative robotic system specifically for SEEG electrode placement, as an initial and essential step toward advancing robotic assistance in intracranial procedures. To contextualize this objective, the following chapters review the clinical aspects of epilepsy (Sec. \ref{sec:epi}), the classification and impact of seizure types, and the current therapeutic strategies available (Sec. \ref{sec:methods}).
+SEEG represents a clinically relevant and technically feasible entry point for robotic intervention, given its procedural characteristics and the growing demand for minimally invasive, accurate, and efficient electrode implantation in epilepsy surgery. Accordingly, this work focuses on the evaluation of a collaborative robotic system designed for SEEG electrode placement called \textit{Yara}, as an initial and essential step toward advancing robotic assistance in intracranial procedures. To contextualize this objective, the following chapters review the clinical aspects of epilepsy (Sec. \ref{sec:epi}), the classification and impact of seizure types, and the current therapeutic strategies available (Sec. \ref{sec:methods}).
 
 \chapter[Objectives]{Objectives}
 \label{Objectives}
@@ -53,7 +53,7 @@ On the other hand, non-motor crises can present different forms of manifestation
 
 % @gui one for what are the treatments
 %...
-Among patients with epilepsy, approximately 30\% experience drug-resistant seizures, representing a significant portion of the global population, estimated at 70 million people. In such cases, surgery may be considered as a therapeutic option. This procedure is indicated for patients with disabling focal epilepsy who are unresponsive to drug treatment and whose seizures originate in a specific region of the brain that can be removed with minimal risk of neurological or cognitive dysfunction \cite{miller2013surgical}. Surgery offers the possibility of significantly improving the quality of life of these patients, providing adequate control of seizures and reducing dependence on high-cost and potentially harmful antiepileptic medications.
+Among patients with epilepsy, approximately 30\% experience drug-resistant seizures, representing a significant portion of the global population estimated at 70 million people. In such cases, surgery may be considered as a therapeutic option. This procedure is indicated for patients with disabling focal epilepsy who are unresponsive to drug treatment and whose seizures originate in a specific region of the brain that can be removed with minimal risk of neurological or cognitive dysfunction \cite{miller2013surgical}. Surgery offers the possibility of significantly improving the quality of life of these patients, providing adequate control of seizures and reducing dependence on high-cost and potentially harmful antiepileptic medications.
 
 Correctly locating the focus of seizures is a crucial aspect in preparing for surgery in patients with epilepsy \cite{miller2013surgical}. Localization methods are applied to accurately determine the focal region, aiming to minimize the invasiveness of the surgery while seeking complete removal of the area of focus to cease seizures. Accuracy in locating the focus has a significant impact on the effectiveness of the surgical procedure, as it can help avoid undesirable consequences associated with the resection of unaffected areas.
 
@@ -136,7 +136,7 @@ Surgeries based on stereotactic devices have a broad history of use, but they al
 
          \textbf{Frame-based surgery} \\
          \toprule
-         1. CT, MRI and preliminary surgery exams
+         1. Preoperative imaging (MRI, EEG) and clinical evaluation
 
          2. Trajectory planning based on preliminary evidence before surgery
 
@@ -162,9 +162,9 @@ Surgeries based on stereotactic devices have a broad history of use, but they al
 
          \textbf{Robot-assisted frameless surgery} \\
          \toprule
-         1. CT, MRI and preliminary surgery exams
+         1. MRI, EEG, and preliminary surgery exams, as well as assessment of patient symptoms
         
-         2. Planning orthogonal trajectories based on preliminary evidence before surgery using the robot's interface
+         2. Planning trajectories based on preliminary evidence before surgery using the robot's interface
 
          3. Facial registration using fiducial points of the face
         

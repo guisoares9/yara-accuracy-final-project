@@ -23,6 +23,14 @@
 \textbf{WikiJournal of Medicine}, v.~1, n.~2, 2014.
 ISSN 2002-4436.}
 
+\bibitem[Bonda \textit{et al.} 2021]{bonda2021robot}
+\abntrefinfo{Bonda \textit{et al.}}{BONDA \textit{et al.}}{2021}
+{BONDA, D.~J. \textit{et al.} Robot-assisted stereoelectroencephalography
+  electrode placement in twenty-three pediatric patients: a high-resolution
+  analysis of individual lead placement time and accuracy at a single
+  institution.
+\textbf{Child's Nervous System}, Springer, v.~37, n.~7, p. 2251--2259, 2021.}
+
 \bibitem[Cardinale Francesco~MD \textit{et al.}
   2013]{cardinale2013stereoelectroencephalography}
 \abntrefinfo{Cardinale Francesco~MD \textit{et al.}}{CARDINALE FRANCESCO~MD
@@ -38,6 +46,13 @@ ISSN 2002-4436.}
   techniques for localising epileptic foci.
 \textbf{Expert Review of Medical Devices}, Taylor \& Francis, v.~19, n.~7, p.
   571--580, Jul 2022.}
+
+\bibitem[Dessert, Thio and Grill 2023]{dessert2023optimization}
+\abntrefinfo{Dessert, Thio and Grill}{DESSERT; THIO; GRILL}{2023}
+{DESSERT, G.~E.; THIO, B.~J.; GRILL, W.~M. Optimization of patient-specific
+  stereo-eeg recording sensitivity.
+\textbf{Brain Communications}, Oxford University Press US, v.~5, n.~6, p.
+  fcad304, 2023.}
 
 \bibitem[Fiani \textit{et al.} 2021]{fiani2021stereoelectroencephalography}
 \abntrefinfo{Fiani \textit{et al.}}{FIANI \textit{et al.}}{2021}
@@ -112,6 +127,13 @@ ISSN 15281167.}
   n.~12, p. 907--914, 2015.
 Available at: \url{https://doi.org/10.2176/nmc.tn.2015-0043}.}
 
+\bibitem[Kim \textit{et al.} 2021]{kim2021contemporaneous}
+\abntrefinfo{Kim \textit{et al.}}{KIM \textit{et al.}}{2021}
+{KIM, L.~H. \textit{et al.} Contemporaneous evaluation of patient experience,
+  surgical strategy, and seizure outcomes in patients undergoing
+  stereoelectroencephalography or subdural electrode monitoring.
+\textbf{Epilepsia}, Wiley Online Library, v.~62, n.~1, p. 74--84, 2021.}
+
 \bibitem[Klein \textit{et al.} 2009]{klein2009evaluation}
 \abntrefinfo{Klein \textit{et al.}}{KLEIN \textit{et al.}}{2009}
 {KLEIN, A. \textit{et al.} Evaluation of 14 nonlinear deformation algorithms
@@ -122,6 +144,12 @@ Available at: \url{https://doi.org/10.2176/nmc.tn.2015-0043}.}
 \abntrefinfo{Lesser, Crone and Webber}{LESSER; CRONE; WEBBER}{2010}
 {LESSER, R.; CRONE, N.; WEBBER, W. Subdural electrodes.
 \textbf{Clin Neurophysiol}, Elsevier, v.~121, n.~9, p. 1376--1392, 2010.}
+
+\bibitem[Liu \textit{et al.} 2020]{liu2020frameless}
+\abntrefinfo{Liu \textit{et al.}}{LIU \textit{et al.}}{2020}
+{LIU, L. \textit{et al.} Frameless rosa{\textregistered} robot-assisted lead
+  implantation for deep brain stimulation: technique and accuracy.
+\textbf{Operative Neurosurgery}, LWW, v.~19, n.~1, p. 57--64, 2020.}
 
 \bibitem[Lozano \textit{et al.} 2009]{lozano2009textbook}
 \abntrefinfo{Lozano \textit{et al.}}{LOZANO \textit{et al.}}{2009}
@@ -176,6 +204,13 @@ ISBN 9783540699590. Available at:
 ISSN 1662-453X.
 Available at:
   \url{https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2023.1203059}.}
+
+\bibitem[Vasconcellos \textit{et al.} 2023]{vasconcellos2023robotic}
+\abntrefinfo{Vasconcellos \textit{et al.}}{VASCONCELLOS \textit{et al.}}{2023}
+{VASCONCELLOS, F. D.~N. \textit{et al.} Robotic-assisted
+  stereoelectroencephalography: a systematic review and meta-analysis of
+  safety, outcomes, and precision in refractory epilepsy patients.
+\textbf{Cureus}, Cureus, v.~15, n.~10, 2023.}
 
 \bibitem[Zeng \textit{et al.} 2017]{zeng2017surgical}
 \abntrefinfo{Zeng \textit{et al.}}{ZENG \textit{et al.}}{2017}

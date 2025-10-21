@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.8.23)  30 SEP 2025 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.8.23)  20 OCT 2025 21:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2027,66 +2027,70 @@ Underfull \vbox (badness 2503) has occurred while \output is active []
 \openout2 = `USPSC-TA-Textual/USPSC-Cap1-Introducao.aux'.
 
 
-(./USPSC-TA-Textual/USPSC-Cap1-Introducao.tex [17
+(./USPSC-TA-Textual/USPSC-Cap1-Introducao.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17
 
 
-] [18
+]
+[18] [19
 
-] [19] [20
+] [20
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
 [22]
-<USPSC-img/eeg-ecog-seeg.png, id=310, 1445.4pt x 813.0375pt>
+<USPSC-img/eeg-ecog-seeg.png, id=318, 1445.4pt x 813.0375pt>
 File: USPSC-img/eeg-ecog-seeg.png Graphic file (type png)
 <use USPSC-img/eeg-ecog-seeg.png>
-Package pdftex.def Info: USPSC-img/eeg-ecog-seeg.png  used on input line 75.
+Package pdftex.def Info: USPSC-img/eeg-ecog-seeg.png  used on input line 81.
 (pdftex.def)             Requested size: 450.4525pt x 253.37886pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [23]
-<USPSC-img/tailarach-frame.jpg, id=341, 469.755pt x 260.172pt>
+<USPSC-img/tailarach-frame.jpg, id=348, 469.755pt x 260.172pt>
 File: USPSC-img/tailarach-frame.jpg Graphic file (type jpg)
 <use USPSC-img/tailarach-frame.jpg>
-Package pdftex.def Info: USPSC-img/tailarach-frame.jpg  used on input line 100.
+Package pdftex.def Info: USPSC-img/tailarach-frame.jpg  used on input line 106.
 
 (pdftex.def)             Requested size: 313.95111pt x 173.88159pt.
-<USPSC-img/tailarach-coordinates.jpeg, id=342, 191.71625pt x 264.99pt>
+<USPSC-img/tailarach-coordinates.jpeg, id=349, 191.71625pt x 264.99pt>
 File: USPSC-img/tailarach-coordinates.jpeg Graphic file (type jpg)
 <use USPSC-img/tailarach-coordinates.jpeg>
 Package pdftex.def Info: USPSC-img/tailarach-coordinates.jpeg  used on input li
-ne 101.
+ne 107.
 (pdftex.def)             Requested size: 131.94695pt x 182.38638pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24 <./USPSC-img/eeg-ecog-seeg.png>]
-<USPSC-img/leksell.png, id=360, 853.1875pt x 410.53375pt>
+[24 <./USPSC-img/eeg-ecog-seeg.png>]
+<USPSC-img/leksell.png, id=367, 853.1875pt x 410.53375pt>
 File: USPSC-img/leksell.png Graphic file (type png)
 <use USPSC-img/leksell.png>
-Package pdftex.def Info: USPSC-img/leksell.png  used on input line 114.
+Package pdftex.def Info: USPSC-img/leksell.png  used on input line 120.
 (pdftex.def)             Requested size: 318.49861pt x 153.25444pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[25 <./USPSC-img/tailarach-frame.jpg> <./USPSC-img/tailarach-coordinates.jpeg>]
+ [25 <./USPSC-img/tailarach-frame.jpg> <./USPSC-img/tailarach-coordinates.jpeg>
+ <./USPSC-img/leksell.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26 <./USPSC-img/leksell.png>]
-<USPSC-img/robots_enhanced.png, id=381, 6022.5pt x 1505.625pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+<USPSC-img/robots_enhanced.png, id=388, 6022.5pt x 1505.625pt>
 File: USPSC-img/robots_enhanced.png Graphic file (type png)
 <use USPSC-img/robots_enhanced.png>
-Package pdftex.def Info: USPSC-img/robots_enhanced.png  used on input line 192.
+Package pdftex.def Info: USPSC-img/robots_enhanced.png  used on input line 198.
 
 (pdftex.def)             Requested size: 450.4525pt x 112.59537pt.
 
-Underfull \vbox (badness 1142) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2100,32 +2104,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-] [31] [32]
-Underfull \vbox (badness 1442) has occurred while \output is active []
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
-[34]
-<USPSC-img/conical-targets-phantom.png, id=454, 3011.25pt x 752.8125pt>
+ [31]
+[32] [33] [34]
+<USPSC-img/conical-targets-phantom.png, id=459, 3011.25pt x 752.8125pt>
 File: USPSC-img/conical-targets-phantom.png Graphic file (type png)
 <use USPSC-img/conical-targets-phantom.png>
 Package pdftex.def Info: USPSC-img/conical-targets-phantom.png  used on input l
-ine 86.
+ine 83.
 (pdftex.def)             Requested size: 432.24861pt x 108.058pt.
  [35
 
 ]
-<USPSC-img/conical-targets-phantom-se-robot.png, id=460, 6022.5pt x 1505.625pt>
+<USPSC-img/conical-targets-phantom-se-robot.png, id=465, 6022.5pt x 1505.625pt>
 
 File: USPSC-img/conical-targets-phantom-se-robot.png Graphic file (type png)
 <use USPSC-img/conical-targets-phantom-se-robot.png>
 Package pdftex.def Info: USPSC-img/conical-targets-phantom-se-robot.png  used o
-n input line 97.
+n input line 94.
 (pdftex.def)             Requested size: 450.4525pt x 112.59537pt.
-<USPSC-img/phantom-rs-sample.png, id=462, 1707.37875pt x 902.37125pt>
+<USPSC-img/phantom-rs-sample.png, id=467, 1707.37875pt x 902.37125pt>
 File: USPSC-img/phantom-rs-sample.png Graphic file (type png)
 <use USPSC-img/phantom-rs-sample.png>
-Package pdftex.def Info: USPSC-img/phantom-rs-sample.png  used on input line 11
-0.
+Package pdftex.def Info: USPSC-img/phantom-rs-sample.png  used on input line 10
+7.
 (pdftex.def)             Requested size: 364.00139pt x 192.38129pt.
 
 
@@ -2133,18 +2137,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36 <./USPSC-img/conical-targets-phantom.png> <./USPSC-img/conical-targets-phan
 tom-se-robot.png>]
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:121: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:118: Missing $ inserted.
 <inserted text> 
                 $
-l.121 ...6 & 2.5 & 2.3 & 1.1 & 1.9 & 1.4 & 1.8 \pm
+l.118 ...6 & 2.5 & 2.3 & 1.1 & 1.9 & 1.4 & 1.8 \pm
                                                    0.3 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:122: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:119: Missing $ inserted.
 <inserted text> 
                 $
-l.122     \end
+l.119     \end
               {tabular}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2152,40 +2156,40 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<USPSC-img/synthetic-brain-phantom.png, id=476, 3011.25pt x 752.8125pt>
+<USPSC-img/synthetic-brain-phantom.png, id=481, 3011.25pt x 752.8125pt>
 File: USPSC-img/synthetic-brain-phantom.png Graphic file (type png)
 <use USPSC-img/synthetic-brain-phantom.png>
 Package pdftex.def Info: USPSC-img/synthetic-brain-phantom.png  used on input l
-ine 131.
+ine 128.
 (pdftex.def)             Requested size: 432.24861pt x 108.058pt.
-<USPSC-img/synthetic-brain-phantom-se-robot.png, id=477, 6022.5pt x 1505.625pt>
+[37 <./USPSC-img/phantom-rs-sample.png> <./USPSC-img/synthetic-brain-phantom.pn
+g>]
+<USPSC-img/synthetic-brain-phantom-se-robot.png, id=489, 6022.5pt x 1505.625pt>
 
 File: USPSC-img/synthetic-brain-phantom-se-robot.png Graphic file (type png)
 <use USPSC-img/synthetic-brain-phantom-se-robot.png>
 Package pdftex.def Info: USPSC-img/synthetic-brain-phantom-se-robot.png  used o
-n input line 140.
+n input line 137.
 (pdftex.def)             Requested size: 432.24861pt x 108.04652pt.
-[37 <./USPSC-img/phantom-rs-sample.png> <./USPSC-img/synthetic-brain-phantom.pn
-g>]
-<USPSC-img/sintetic-brain-ct.png, id=490, 1514.65875pt x 406.51875pt>
+<USPSC-img/sintetic-brain-ct.png, id=495, 1514.65875pt x 406.51875pt>
 File: USPSC-img/sintetic-brain-ct.png Graphic file (type png)
 <use USPSC-img/sintetic-brain-ct.png>
 Package pdftex.def Info: USPSC-img/sintetic-brain-ct.png  used on input line 15
-5.
+2.
 (pdftex.def)             Requested size: 432.24861pt x 116.0079pt.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:165: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:162: Missing $ inserted.
 <inserted text> 
                 $
-l.165 ...58 & 1.71 & 0.56 & 0.95 & 1.04 & 1.30 \pm
+l.162 ...58 & 1.71 & 0.56 & 0.95 & 1.04 & 1.30 \pm
                                                    0.25 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:166: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:163: Missing $ inserted.
 <inserted text> 
                 $
-l.166  $
+l.163  $
         \Delta$Target(mm) & 2.57 & 2.62 & 3.72 & 2.26 & 4.88 & 3.48 & 1.97 &...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2193,18 +2197,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:166: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:163: Missing $ inserted.
 <inserted text> 
                 $
-l.166 ...72 & 2.26 & 4.88 & 3.48 & 1.97 & 3.07 \pm
+l.163 ...72 & 2.26 & 4.88 & 3.48 & 1.97 & 3.07 \pm
                                                    0.25 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:167: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:164: Missing $ inserted.
 <inserted text> 
                 $
-l.167  \end
+l.164  \end
            {tabular}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2212,45 +2216,42 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-Underfull \vbox (badness 7907) has occurred while \output is active []
-
- [38 <./USPSC-img/synthetic-brain-phantom-se-robot.png>]
-<USPSC-img/synthetic-brain-phantom-or-leksell.png, id=497, 3011.25pt x 752.8125
+[38 <./USPSC-img/synthetic-brain-phantom-se-robot.png>]
+<USPSC-img/synthetic-brain-phantom-or-leksell.png, id=502, 3011.25pt x 752.8125
 pt>
 File: USPSC-img/synthetic-brain-phantom-or-leksell.png Graphic file (type png)
 <use USPSC-img/synthetic-brain-phantom-or-leksell.png>
 Package pdftex.def Info: USPSC-img/synthetic-brain-phantom-or-leksell.png  used
- on input line 180.
+ on input line 177.
 (pdftex.def)             Requested size: 432.24861pt x 108.058pt.
  [39 <./USPSC-img/sintetic-brain-ct.png> <./USPSC-img/synthetic-brain-phantom-o
 r-leksell.png (PNG copy)>]
-<USPSC-img/synthetic-brain-or-ct-leksell.png, id=503, 1445.4pt x 813.0375pt>
+<USPSC-img/synthetic-brain-or-ct-leksell.png, id=508, 1445.4pt x 813.0375pt>
 File: USPSC-img/synthetic-brain-or-ct-leksell.png Graphic file (type png)
 <use USPSC-img/synthetic-brain-or-ct-leksell.png>
 Package pdftex.def Info: USPSC-img/synthetic-brain-or-ct-leksell.png  used on i
-nput line 189.
+nput line 186.
 (pdftex.def)             Requested size: 432.24861pt x 243.13156pt.
-<USPSC-img/synthetic-brain-phantom-or-robot.png, id=508, 6022.5pt x 1505.625pt>
+<USPSC-img/synthetic-brain-phantom-or-robot.png, id=513, 6022.5pt x 1505.625pt>
 
 File: USPSC-img/synthetic-brain-phantom-or-robot.png Graphic file (type png)
 <use USPSC-img/synthetic-brain-phantom-or-robot.png>
 Package pdftex.def Info: USPSC-img/synthetic-brain-phantom-or-robot.png  used o
-n input line 198.
+n input line 195.
 (pdftex.def)             Requested size: 432.24861pt x 108.04652pt.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:208: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:205: Missing $ inserted.
 <inserted text> 
                 $
-l.208 ...) & 1.6 & 2.1 & 1.8 & 3.6 & 5.0 & 2.8 \pm
+l.205 ...) & 1.6 & 2.1 & 1.8 & 3.6 & 5.0 & 2.8 \pm
                                                    0.25 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:209: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:206: Missing $ inserted.
 <inserted text> 
                 $
-l.209         $
+l.206         $
                \Delta$Target (mm) & 8.1 & 16.2 & 11.1 & 15.3 & 13.9 & 12.9 \...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2258,18 +2259,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:209: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:206: Missing $ inserted.
 <inserted text> 
                 $
-l.209 ....1 & 16.2 & 11.1 & 15.3 & 13.9 & 12.9 \pm
+l.206 ....1 & 16.2 & 11.1 & 15.3 & 13.9 & 12.9 \pm
                                                    0.25 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:210: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:207: Missing $ inserted.
 <inserted text> 
                 $
-l.210     \end
+l.207     \end
               {tabular}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2277,34 +2278,37 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png, id=509, 3011.25pt x
+<USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png, id=514, 3011.25pt x
  752.8125pt>
 File: USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png Graphic file (t
 ype png)
 <use USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png>
 Package pdftex.def Info: USPSC-img/synthetic-brain-phantom-or-robot-electrodes.
-png  used on input line 218.
+png  used on input line 215.
 (pdftex.def)             Requested size: 432.24861pt x 108.058pt.
-[40 <./USPSC-img/synthetic-brain-or-ct-leksell.png>]
-<USPSC-img/synthetic-phantom-or-ct.png, id=518, 1445.4pt x 813.0375pt>
-File: USPSC-img/synthetic-phantom-or-ct.png Graphic file (type png)
-<use USPSC-img/synthetic-phantom-or-ct.png>
-Package pdftex.def Info: USPSC-img/synthetic-phantom-or-ct.png  used on input l
-ine 228.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 <./USPSC-img/synthetic-brain-or-ct-leksell.png>]
+<USPSC-img/synthetic-brain-or-robot-ct.png, id=523, 1445.4pt x 813.0375pt>
+File: USPSC-img/synthetic-brain-or-robot-ct.png Graphic file (type png)
+<use USPSC-img/synthetic-brain-or-robot-ct.png>
+Package pdftex.def Info: USPSC-img/synthetic-brain-or-robot-ct.png  used on inp
+ut line 225.
 (pdftex.def)             Requested size: 432.24861pt x 243.13156pt.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:237: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:234: Missing $ inserted.
 <inserted text> 
                 $
-l.237 ...) & 3.1 & 3.7 & 2.9 & 3.2 & 2.6 & 3.1 \pm
+l.234 ...) & 3.1 & 3.7 & 2.9 & 3.2 & 2.6 & 3.1 \pm
                                                    0.25 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:238: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:235: Missing $ inserted.
 <inserted text> 
                 $
-l.238         $
+l.235         $
                \Delta$Target (mm) & 5.8 & 5.9 & 5.8 & 5.9 & 5.5 & 5.8 \pm 0....
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2312,18 +2316,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:238: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:235: Missing $ inserted.
 <inserted text> 
                 $
-l.238 ...) & 5.8 & 5.9 & 5.8 & 5.9 & 5.5 & 5.8 \pm
+l.235 ...) & 5.8 & 5.9 & 5.8 & 5.9 & 5.5 & 5.8 \pm
                                                    0.25 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:239: Missing $ inserted.
+./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex:236: Missing $ inserted.
 <inserted text> 
                 $
-l.239     \end
+l.236     \end
               {tabular}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2333,10 +2337,18 @@ my insertion and my current dilemma will both disappear.
 
 ) [41 <./USPSC-img/synthetic-brain-phantom-or-robot.png> <./USPSC-img/synthetic
 -brain-phantom-or-robot-electrodes.png (PNG copy)>] [42 <./USPSC-img/synthetic-
-phantom-or-ct.png>]
+brain-or-robot-ct.png>]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux'.
 
  (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.tex
+
+Package caption Warning: \label without proper reference on input line 28.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:accuracy' on page 43 undefined on input line 9.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43
@@ -2355,7 +2367,7 @@ bibitemlist
 
 
 
-]) [46]
+] [46]) [47]
 \openout2 = `USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux'.
 
  (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.tex)
@@ -2376,33 +2388,36 @@ AED: lastpage setting LastPage
 (./USPSC-TA-Textual/USPSC-Cap1-Introducao.aux)
 (./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.aux)
 (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux)
-(./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux)) ) 
+(./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 44368 strings out of 478287
- 944788 string characters out of 5849289
- 1344413 words of memory out of 5000000
- 61468 multiletter control sequences out of 15000+600000
- 492565 words of font info for 161 fonts, out of 8000000 for 9000
+ 44395 strings out of 478287
+ 945483 string characters out of 5849289
+ 1345531 words of memory out of 5000000
+ 61488 multiletter control sequences out of 15000+600000
+ 492682 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,94p,1173b,1130s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/e
-nc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/c
-m-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfti1200.pfb>
-Output written on USPSC-TCC-modelo-EESC.pdf (48 pages, 72195342 bytes).
+ 99i,17n,94p,1173b,1132s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
+/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm12
+00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx172
+8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on USPSC-TCC-modelo-EESC.pdf (49 pages, 72358695 bytes).
 PDF statistics:
- 765 PDF objects out of 1000 (max. 8388607)
- 636 compressed objects within 7 object streams
- 145 named destinations out of 1000 (max. 500000)
- 41337 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 784 PDF objects out of 1000 (max. 8388607)
+ 654 compressed objects within 7 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 41329 words of extra memory for PDF output out of 42996 (max. 10000000)
 
