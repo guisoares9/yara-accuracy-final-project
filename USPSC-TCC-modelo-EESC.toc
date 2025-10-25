@@ -13,28 +13,27 @@
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Literature Review}}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Epilepsy}{21}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Treatment Methods}{22}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Non-invasive Video-EEG}{22}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Video-EEG}{22}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Invasive EEG: Subdural EEG (SDE) and Stereoencephalography (SEEG)}{23}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Stereoelectroencephalography: Operation Methods}{24}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Stereotaxy And SEEG}{24}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Frame-based Surgeries}{25}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.1}Stereotaxy}{24}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Frame-based Surgeries}{24}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Robot-based Surgeries}{28}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Introducing Yara}{29}{section.3.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Development}}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Patient Monitoring Phase}{31}{section.4.1}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Methods}}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Patient Monitoring}{31}{section.4.1}%
 \contentsline {section}{\numberline {4.2}SEEG Planning Phase}{31}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Image Fusion}{32}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Electrode Placement}{32}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Robot-Scan Registration Phase}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Intra-Operation Phase}{34}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Intra-Operation Phase}{33}{section.4.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Method and Results}}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conical Target Phantom in Simulated Environment}{35}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Synthetic Brain Phantom in Simulated Environment}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Synthetic Brain Phantom in Surgical Room}{39}{section.5.3}%
+\contentsline {section}{\numberline {5.1}Conical Target Phantom}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Synthetic Brain Phantom}{37}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Synthetic Brain Phantom in Operating Room}{40}{section.5.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Discussion and Conclusion}}{43}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {References}}{45}{section*.33}%
+\contentsline {chapter}{\uppercase {References}}{45}{section*.34}%

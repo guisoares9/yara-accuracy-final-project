@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.8.23)  21 OCT 2025 17:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.8.23)  25 OCT 2025 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1990,15 +1990,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
 Overfull \hbox (7.00812pt too wide) in paragraph at lines 56--57
-[]\T1/lmr/m/n/12 Among pa-tients with epilepsy, ap-prox-i-mately 30% ex-pe-ri-e
+[]\T1/lmr/m/n/12 Among pa-tients with epilepsy, ap-prox-i-mately 40% ex-pe-ri-e
 nce drug-resistant seizures,
  []
 
-Missing character: There is no — ("2014) in font ec-lmr12!
-Missing character: There is no — ("2014) in font ec-lmr12!
 [22]
 File: USPSC-img/eeg-ecog-seeg.png Graphic file (type bmp)
 <USPSC-img/eeg-ecog-seeg.png>
+
+Missing character: There is no ‑ ("2011) in font ec-lmr12!
+Missing character: There is no – ("2013) in font ec-lmr12!
+Missing character: There is no ‑ ("2011) in font ec-lmr12!
+Missing character: There is no – ("2013) in font ec-lmr12!
+Missing character: There is no ‑ ("2011) in font ec-lmr12!
+Missing character: There is no ‑ ("2011) in font ec-lmr12!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2014,12 +2019,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [24]
 File: USPSC-img/leksell.png Graphic file (type bmp)
 <USPSC-img/leksell.png>
+
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
  [25]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Missing character: There is no — ("2014) in font ec-lmr12!
-Missing character: There is no — ("2014) in font ec-lmr12!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2042,72 +2048,66 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Missing character: There is no — ("2014) in font ec-lmr12!
-Missing character: There is no — ("2014) in font ec-lmr12!
-Missing character: There is no — ("2014) in font ec-lmr12!
-
-Underfull \vbox (badness 6927) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
 [32]
-Missing character: There is no — ("2014) in font ec-lmr12!
+Missing character: There is no ‑ ("2011) in font ec-lmr12!
 Missing character: There is no ’ ("2019) in font ec-lmr12!
-[33] [34]
-Missing character: There is no — ("2014) in font ec-lmr12!
-Missing character: There is no — ("2014) in font ec-lmr12!
-File: USPSC-img/conical-targets-phantom.png Graphic file (type bmp)
-<USPSC-img/conical-targets-phantom.png>
-[35
+[33] [34
 
 ]
+File: USPSC-img/conical-targets-phantom.png Graphic file (type bmp)
+<USPSC-img/conical-targets-phantom.png>
+ [35]
 File: USPSC-img/conical-targets-phantom-se-robot.png Graphic file (type bmp)
 <USPSC-img/conical-targets-phantom-se-robot.png>
+
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+ [36]
 File: USPSC-img/phantom-rs-sample.png Graphic file (type bmp)
 <USPSC-img/phantom-rs-sample.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[36]
 File: USPSC-img/synthetic-brain-phantom.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-phantom.png>
- [37]
 File: USPSC-img/synthetic-brain-phantom-se-robot.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-phantom-se-robot.png>
 
-Overfull \hbox (3.78667pt too wide) in paragraph at lines 148--149
+[37]
+Overfull \hbox (3.78667pt too wide) in paragraph at lines 152--153
 []\T1/lmr/m/n/12 Figure [][]8[][] shows the syn-thetic model de-vel-oped. The c
 om-par-i-son be-tween the planned
  []
 
+[38]
 File: USPSC-img/sintetic-brain-ct.png Graphic file (type bmp)
 <USPSC-img/sintetic-brain-ct.png>
-[38]
 File: USPSC-img/synthetic-brain-phantom-or-leksell.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-phantom-or-leksell.png>
-File: USPSC-img/synthetic-brain-or-ct-leksell.png Graphic file (type bmp)
-<USPSC-img/synthetic-brain-or-ct-leksell.png>
- [39]
 File: USPSC-img/synthetic-brain-phantom-or-robot.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-phantom-or-robot.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+File: USPSC-img/synthetic-brain-or-ct-leksell.png Graphic file (type bmp)
+<USPSC-img/synthetic-brain-or-ct-leksell.png>
+
+[40]
 File: USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png Graphic file (t
 ype bmp)
 <USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png>
- [40]
 File: USPSC-img/synthetic-brain-or-robot-ct.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-or-robot-ct.png>
-) [41] [42]
+
+
+LaTeX Warning: Reference `sec:stereotactics' on page 41 undefined on input line
+ 220.
+
+[41]) [42]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux'.
 
  (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.tex
-
-Package caption Warning: \label without proper reference on input line 28.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:accuracy' on page 43 undefined on input line 9.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43
@@ -2116,8 +2116,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Missing character: There is no — ("2014) in font ec-lmr12!
-Missing character: There is no — ("2014) in font ec-lmr12!
+Overfull \hbox (55.20985pt too wide) in paragraph at lines 29--38
+ [][] 
+ []
+
 ) [44] (./USPSC-TCC-modelo-EESC.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2154,14 +2156,17 @@ AED: lastpage setting LastPage
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 43719 strings out of 476191
- 937918 string characters out of 5812072
- 1246099 words of memory out of 5000000
- 63671 multiletter control sequences out of 15000+600000
+ 43721 strings out of 476191
+ 937958 string characters out of 5812072
+ 1246025 words of memory out of 5000000
+ 63673 multiletter control sequences out of 15000+600000
  515499 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,13n,94p,1339b,1125s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,13n,94p,1294b,1125s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on USPSC-TCC-modelo-EESC.pdf (50 pages).

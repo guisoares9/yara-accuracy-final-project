@@ -8,7 +8,7 @@
 
 % In 1985, the first interaction between medicine and robotics occurred with the \textit{PUMA} manipulator, which was used for brain biopsies. At the end of the 20th century, there was a fundamental transformation in the methods used to perform surgical procedures. For many interventions, the invasive nature has been considerably reduced, bringing superior results such as better survival rates, lower incidence of complications, and faster recovery in terms of functional health and quality of life \cite{yoon2023robotic}.
 
-% Surgical interventions further expanded with the introduction of the \textit{da Vinci} robot in 2000, which enabled tasks to be performed with precision and strength beyond human capability. The \textit{da Vinci} system marked a significant advancement in minimally invasive surgery (MIS)—a set of surgical techniques that minimize the size and number of incisions required, thereby reducing patient trauma, recovery time, and risk of complications \cite{morrell2021history}. The success of MIS, facilitated by robotic assistance, has driven intensive research and development of new surgical robots in recent years \cite{minimal}.
+% Surgical interventions further expanded with the introduction of the \textit{da Vinci} robot in 2000, which enabled tasks to be performed with precision and strength beyond human capability. The \textit{da Vinci} system marked a significant advancement in minimally invasive surgery (MIS) - a set of surgical techniques that minimize the size and number of incisions required, thereby reducing patient trauma, recovery time, and risk of complications \cite{morrell2021history}. The success of MIS, facilitated by robotic assistance, has driven intensive research and development of new surgical robots in recent years \cite{minimal}.
 
 % spine robots intro? types of robots? collaborative robots?
 In cranial neurosurgery, intracranial electrode placement is a core procedure for both diagnostic and therapeutic purposes, particularly in the management of epilepsy and movement disorders. These procedures require the accurate insertion of electrodes into specific brain regions, reason why robotic assistance is increasingly utilized. Among the most common applications are stereoelectroencephalography (SEEG) for epilepsy diagnosis and deep brain stimulation (DBS) for treating movement disorders such as Parkinson's disease \cite{kim2021contemporaneous}.
@@ -37,7 +37,7 @@ Finally, the study aims to conduct accuracy validation tests using the Yara robo
 
 % @gui one for what is epilepsy
 %...
-Epilepsy is a chronic brain disease characterized by a long-lasting predisposition to generate seizures, not caused by any immediate insult to the central nervous system, and by the neurobiological, cognitive, psychological, and social consequences of recurrent seizures \cite{beghi2020epidemiology}. This is the most common neurological disease worldwide, affecting different social classes, races, ages, and geographic locations \cite{ngugi2010estimation}.
+Epilepsy is a chronic brain disease characterized by a long-lasting predisposition to generate seizures, not caused by any immediate insult to the central nervous system, and by the neurobiological, cognitive, psychological, and social consequences of recurrent seizures \cite{beghi2020epidemiology}. This is the most common neurological disease worldwide, affecting different social classes, ages, and geographic locations \cite{ngugi2010estimation}.
 
 % what is epilepsy seizures
 The definition of epileptic seizures is: repeated and transient episodes that manifest themselves through patterned behaviors, mirroring the underlying neural processes associated with the condition \cite{fisher2005epileptic}. Although all people with epilepsy experience seizures, not all individuals with seizures have epilepsy. Epileptic seizures can also occur after an acute injury to the central nervous system (CNS) of structural, systemic, toxic, or metabolic origin. These events are considered acute manifestations of the insult and may not occur when the underlying cause has been removed or the acute phase has passed \cite{beghi2010recommendation}.
@@ -53,7 +53,7 @@ On the other hand, non-motor crises can present different forms of manifestation
 
 % @gui one for what are the treatments
 %...
-Among patients with epilepsy, approximately 30\% experience drug-resistant seizures, representing a significant portion of the global population estimated at 70 million people. In such cases, surgery may be considered as a therapeutic option. This procedure is indicated for patients with disabling focal epilepsy who are unresponsive to drug treatment and whose seizures originate in a specific region of the brain that can be removed with minimal risk of neurological or cognitive dysfunction \cite{miller2013surgical}. Surgery offers the possibility of significantly improving the quality of life of these patients, providing adequate control of seizures and reducing dependence on high-cost and potentially harmful antiepileptic medications.
+Among patients with epilepsy, approximately 40\% experience drug-resistant seizures, representing a significant portion of the global population estimated at 70 million people. In such cases, surgery may be considered as a therapeutic option. This procedure is indicated for patients with disabling focal epilepsy who are unresponsive to drug treatment and whose seizures originate in a specific region of the brain that can be removed with minimal risk of neurological or cognitive dysfunction \cite{miller2013surgical}. Surgery offers the possibility of significantly improving the quality of life of these patients, providing adequate control of seizures and reducing dependence on high-cost and potentially harmful antiepileptic medications.
 
 Correctly locating the focus of seizures is a crucial aspect in preparing for surgery in patients with epilepsy \cite{miller2013surgical}. Localization methods are applied to accurately determine the focal region, aiming to minimize the invasiveness of the surgery while seeking complete removal of the area of focus to cease seizures. Accuracy in locating the focus has a significant impact on the effectiveness of the surgical procedure, as it can help avoid undesirable consequences associated with the resection of unaffected areas.
 
@@ -69,7 +69,7 @@ Before progressing to invasive procedures, a non-invasive analysis is typically 
 
 %@gui subdural EEG
 %...
-Subdural EEG (SDE), also known as electrocorticography (ECoG), was developed to provide more precise measurement of brain activity than scalp EEG. In SDE, an electrode array is placed directly on the surface of the cortex after a portion of the skull is removed, as illustrated in Fig. \ref{fig:eeg-ecog-seeg}. This direct contact enables the acquisition of signals with higher fidelity and less noise compared to scalp EEG \cite{lesser2010subdural}. The electrodes typically remain in place for several days to record both ictal and interictal activity. However, SDE is highly invasive, requiring two craniotomies — one for electrode placement and another for removal — and carries a significant risk of postoperative infection, often related to surgical contamination. These drawbacks have motivated the development of alternative methods, such as SEEG, which aim to reduce invasiveness and associated complications \cite{jehi2021comparative}.
+Subdural EEG (SDE), also known as electrocorticography (ECoG), was developed to provide more precise measurement of brain activity than scalp EEG. In SDE, an electrode array is placed directly on the surface of the cortex after a portion of the skull is removed, as illustrated in Fig. \ref{fig:eeg-ecog-seeg}. This direct contact enables the acquisition of signals with higher fidelity and less noise compared to scalp EEG \cite{lesser2010subdural}. The electrodes typically remain in place for several days to record both ictal and interictal activity. However, SDE is highly invasive, requiring two craniotomies, one for electrode placement and another for removal, and carries a significant risk of postoperative infection, often related to surgical contamination. These drawbacks have motivated the development of alternative methods, such as SEEG, which aim to reduce invasiveness and associated complications \cite{jehi2021comparative}.
 
 % @gui SEEG
 %...
@@ -97,27 +97,27 @@ Widely adopted metrics for evaluating the accuracy of the electrode placement ar
 %...
 \subsection{Stereotaxy}
 
-SEEG operation techniques began with Tailarach using x-ray images for planning and checking electrode positioning. Since the inception of SEEG, the development of mechanical stereotaxic apparatus that fix the skull and guide electrode placement has been the focus to achieve the best accuracy during surgery. The first apparatus was called the Tailarach apparatus and featured pins for fixing the skull, support for the x-ray tube, and radiographic film \cite{mazoyer2008memoriam}.Popular devices today date their creation to the same time, such as the Leksell in Sweden.
+SEEG operation techniques began in the 1950s with Jean Talairach and Jean Bancaud, who developed x‑ray–based methods for planning and verifying electrode positioning. Since then the development of mechanical  stereotactic apparatus to fix the skull and guide electrode placement concentrated in the mid‑20th century (late 1940s–1950s). The early Tailarach apparatus featured skull‑fixation pins, a support for the x‑ray tube, and radiographic film \cite{mazoyer2008memoriam}. Contemporary popular frames, such as the Leksell frame developed in Sweden around the same period, trace their origins to these innovations.
 
 With the advent of computed tomography, surgeries began to be planned based on slices, allowing a three-dimensional understanding of the areas of investigation. Devices that use the three-dimensionality of tomography images were adapted, adding a support with a diagonal cut in the shape of an N, allowing the calculation of the height of each tomography slice in relation to the device coordinates. This system became known as the N-Localizer and is widely used in current neurosurgeries \cite{lozano2009textbook}.
 
 \begin{figure}[h]
-   \centering
-   \begin{subfigure}{0.69\textwidth}
-        \includegraphics[width=\linewidth]{USPSC-img/tailarach-frame.jpg}
-        \caption{}
-   \end{subfigure}\hfill
-   \begin{subfigure}{0.29\textwidth}
-        \includegraphics[width=\linewidth]{USPSC-img/tailarach-coordinates.jpeg}
-        \caption{}
-   \end{subfigure}
-   \caption{(a) presents Tailarach's \textit{frame} with x-ray supports and (b) presents an example x-ray image alongside the coordinate system developed by Tailarach \cite{mazoyer2008memoriam}.}
-   \label{fig:tailarach-frame}
+     \centering
+     \begin{subfigure}{0.69\textwidth}
+          \includegraphics[width=\linewidth]{USPSC-img/tailarach-frame.jpg}
+          \caption{}
+     \end{subfigure}\hfill
+     \begin{subfigure}{0.29\textwidth}
+          \includegraphics[width=\linewidth]{USPSC-img/tailarach-coordinates.jpeg}
+          \caption{}
+     \end{subfigure}
+     \caption{(a) presents Tailarach's \textit{frame} with x-ray supports and (b) presents an example x-ray image alongside the coordinate system developed by Tailarach \cite{mazoyer2008memoriam}.}
+     \label{fig:tailarach-frame}
 \end{figure}
 
-\subsection{Frame-based Surgeries} \label{sec:stereotatics}
+\subsection{Frame-based Surgeries} \label{sec:stereotactics}
 
-The earliest SEEG technique involved introducing electrodes in parallel trajectories, normal to the sagittal view, using the Cartesian map called Talairach coordinates \cite{mazoyer2008memoriam}. Subsequently, variations of the technique were explored with the introduction of stereotaxic arcs that can be fixed to devices such as the Leksell or CRW and that allow the introduction of oblique electrodes. Therefore, the assessment of the impact on precision between different techniques for implanting oblique or orthogonal electrodes was studied in \cite{Iordanou2019}. Figure \ref{fig:leksell} presents the Leksell G apparatus and the N-Localizer.
+The earliest SEEG technique involved introducing electrodes in parallel trajectories, normal to the sagittal view, using the Cartesian map called Talairach coordinates \cite{mazoyer2008memoriam}. Subsequently, variations of the technique were explored with the introduction of  stereotactic arcs that can be fixed to devices such as the Leksell or CRW and that allow the introduction of oblique electrodes. Therefore, the assessment of the impact on precision between different techniques for implanting oblique or orthogonal electrodes was studied in \cite{Iordanou2019}. Figure \ref{fig:leksell} presents the Leksell G apparatus and the N-Localizer.
 
 Originally, the calculation of the coordinates of each electrode in relation to the apparatus was carried out manually, using the N-Localizer geometry. Some softwares for surgical planning were developed so that the calculation of the coordinates of the entry and target points was automated using image processing methods containing the N-Localizer \cite{dasgupta2022previous}. These softwares also features planning tools, such as fusing standard CT images and MRI images.
 
@@ -129,11 +129,11 @@ Originally, the calculation of the coordinates of each electrode in relation to 
      \label{fig:leksell}
 \end{figure}
 
-Image fusion allows precise surgical planning by combining preoperative CT and MRI scans to assess vascular structures and functional anatomy near electrode trajectories. During surgery, a stereotactic frame and N-Localizer are attached to the patient's head, followed by an intraoperative CT scan. This scan is fused with the preoperative images, enabling the planning software to identify N-Localizer fiducials and accurately compute coordinates for electrode placement. These coordinates are then inputted into the stereotactic frame or arc, guiding the surgeon in positioning each electrode along the planned trajectory.
+Image fusion allows precise surgical planning by combining preoperative MRI to assess vascular structures and functional anatomy near electrode trajectories and intraoperative CT to permit frame positioning. During surgery, a stereotactic frame and N-Localizer are attached to the patient's head, followed by an intraoperative CT scan. This scan is fused with the preoperative MRI, enabling the planning software to identify N-Localizer fiducials and accurately compute coordinates for electrode placement. These coordinates are then inputted into the stereotactic frame or arc, guiding the surgeon in positioning each electrode along the planned trajectory.
 
 %In this regard, Medtronic, with the Stealth Autoguide \cite{medtronic}, developed a system that allows the tool to be fixed, facilitating the drilling of the skull and the fixation of the guide screw.
 
-Surgeries based on stereotactic devices have a broad history of use, but they also have disadvantages in relation to more recent systems, such as robotic systems. Among the disadvantages, the stereotaxic frames operation requires the placement of the apparatus at the beginning of the surgery, followed by a CT with the N-Localizer generally located in another room, and the fusion of this CT to the MRI taken used for planning. This process is necessary to calculate the coordinates of each entry point and target in relation to the frame. This CT scan during surgery is not necessary with the use of robotic systems in surgeries called frameless.
+Surgeries based on stereotactic devices have a broad history of use, but they also have disadvantages in relation to more recent systems, such as robotic systems. Among the disadvantages, the  stereotactic frames operation requires the placement of the apparatus at the beginning of the surgery, followed by a CT generally located in another room, and the fusion of this CT to the MRI taken used for planning. This process is necessary to calculate the coordinates of each entry point and target in relation to the frame. This CT scan during surgery is not necessary with the use of robotic systems in surgeries called frameless.
 
 \begin{table}[!h]
      \centering
@@ -141,62 +141,62 @@ Surgeries based on stereotactic devices have a broad history of use, but they al
      \label{tab:frame-vs-frameless}
      \begin{tabular}{p{0.95\linewidth}}
 
-         \textbf{Frame-based surgery} \\
-         \toprule
-         1. Preoperative imaging (MRI, EEG) and clinical evaluation
+          \textbf{Frame-based surgery}                          \\
+          \toprule
+          1. Preoperative imaging (MRI, EEG) and clinical evaluation
 
-         2. Trajectory planning based on preliminary evidence before surgery
+          2. Trajectory planning based on preliminary evidence before surgery
 
-         3. Start of surgery and fixation of the head in the stereotaxic apparatus
-        
-         4. Tomography with Leksell and N-Localizer
+          3. Start of surgery and fixation of the head in the stereotactic apparatus
 
-         5. Fusion of CT, MRI and CT images with Leksell to calculate the coordinates of each electrode in relation to the apparatus
-        
-         6. Using the stereotaxic ruler, drill the skin and skull using a 3 mm drill with an appropriate end point
-        
-         7. Fixing the guide screw to the skull
-        
-         8. Using the guide screw, insert the temporary stylet into the intracranial space to the target point for electrode guidance
-        
-         9. Remove the temporary stylet and, through the guide screw, insert the depth electrode into the intracranial space to the predefined destination
-        
-         10. Screw the electrode cover onto the guide screw
-        
-         11. Repeat steps 6 to 10 for the remaining electrodes \\
-         \bottomrule
+          4. Tomography with stereotactic frame and N-Localizer
+
+          5. Fusion of MRI and intraop CT with frame to calculate the coordinates of each electrode in relation to the apparatus
+
+          6. Using the  stereotactic ruler, drill the skin and skull using a 3 mm drill with an appropriate end point
+
+          7. Fixing a guide screw to the skull, to serve as a guide for electrode insertion
+
+          8. Using the guide screw, insert the temporary stylet into the intracranial space to the target point for electrode guidance
+
+          9. Remove the temporary stylet and, through the guide screw, insert the depth electrode into the intracranial space to the predefined destination
+
+          10. Screw the electrode cover onto the guide screw
+
+          11. Repeat steps 6 to 10 for the remaining electrodes \\
+          \bottomrule
           \\
 
-         \textbf{Robot-assisted frameless surgery} \\
-         \toprule
-         1. MRI, EEG, and preliminary surgery exams, as well as assessment of patient symptoms
-        
-         2. Planning trajectories based on preliminary evidence before surgery using the robot's interface
+          \textbf{Robot-assisted frameless surgery}             \\
+          \toprule
+          1. MRI, EEG, and preliminary surgery exams, as well as assessment of patient symptoms
 
-         3. Facial registration using fiducial points of the face
-        
-         4. Positioning the robot and drilling the skin and skull using a 3 mm drill with an appropriate limit stroke
-        
-         5. Fixing the guide screw to the skull
-        
-         6. Using the guide screw, insert the temporary stylet into the intracranial space to the target point for electrode guidance
-        
-         7. Remove the temporary stylet and, through the guide screw, insert the depth electrode into the intracranial space to the predefined destination
-        
-         8. Screw the electrode cover onto the guide screw
-        
-         9. Repeat steps 4 to 8 for the remaining electrodes \\
-         \bottomrule
+          2. Planning trajectories based on preliminary evidence before surgery using the robot's interface
+
+          3. Facial registration using fiducial points of the face
+
+          4. Positioning the robot and drilling the skin and skull using a 3 mm drill with an appropriate limit stroke
+
+          5. Fixing the guide screw to the skull
+
+          6. Using the guide screw, insert the temporary stylet into the intracranial space to the target point for electrode guidance
+
+          7. Remove the temporary stylet and, through the guide screw, insert the depth electrode into the intracranial space to the predefined destination
+
+          8. Screw the electrode cover onto the guide screw
+
+          9. Repeat steps 4 to 8 for the remaining electrodes   \\
+          \bottomrule
      \end{tabular}
 \end{table}
 
-The Table \ref{tab:frame-vs-frameless} presents a comparison between the procedures necessary to perform \textit{frame-based} surgery compared to \textit{frameless} surgeries. The greater number of steps during surgery increases the time needed to perform the surgery and may result in loss of accuracy due to non-deterministic procedures and possible human errors.
+The Table \ref{tab:frame-vs-frameless} presents a comparison between the procedures necessary to perform frame-based surgery compared to frameless surgeries. The greater number of steps during surgery increases the time needed to perform the surgery and may result in loss of accuracy due to non-deterministic procedures and possible human errors.
 
-Performing a CT scan during surgery is time-consuming. The frame-based process requires a tomography with the stereotactic device immediately after its placement. While having a CT scanner available in the same operating room would streamline logistics, this setup is rarely feasible, as most hospitals do not have a dedicated CT scanner for each operating room. Although some facilities offer operating rooms equipped with CT scanners, their limited availability and competition with other ongoing surgeries complicate scheduling and scalability. As a result, the typical solution is to transport the sedated patient to a separate CT scanner, which increases surgery time and introduces risks of unwanted movement or disturbance to the apparatus during transport, potentially compromising surgical accuracy.
+Performing a CT scan during surgery is time-consuming. The frame-based process requires a tomography with the stereotactic device immediately after its placement. While having a CT scanner available in the same operating room would streamline logistics, this setup is rarely feasible, as most hospitals do not have a dedicated CT scanner for each operating room. Although some facilities offer operating rooms equipped with CT scanners, their limited availability and competition with other ongoing surgeries complicate scheduling and scalability. As a result, the typical solution is to transport the sedated patient to a separate CT scanner, which increases surgery time and possibly introduces additional risks.
 
-Another significant source of error arises from the fusion of intraoperative CT images acquired with the stereotactic device and preoperative MRI images. Image fusion involves the precise alignment of two volumetric datasets—typically, the CT and MRI scans—so that both accurately represent the same anatomical structures. This process is necessary because the spatial orientation and coordinate systems of the CT and MRI volumes may differ due to variations in patient positioning and scanner-specific parameters. Imperfect alignment during fusion can introduce discrepancies in the localization of entry and target points, thereby contributing to the overall error in electrode placement.
+Another significant source of error arises from the fusion of intraoperative CT images acquired with the stereotactic device and preoperative MRI images. Image fusion involves the precise alignment of two volumetric datasets - typically, the CT and MRI scans - so that both accurately represent the same anatomical structures. This process is necessary because the spatial orientation and coordinate systems of the CT and MRI volumes differ in space due to variations in patient positioning and scanner-specific parameters. Imperfect alignment during fusion can introduce discrepancies in the localization of entry and target points, thereby contributing to the overall error in electrode placement.
 
-The alignment of the preoperative MRI with the intraoperative CT, in the case of SEEG surgery, allows the planning performed on the MRI to be accurately transferred to the CT acquired with the stereotaxic apparatus. In this way, the result of the fusion is the planning of the surgery, containing entry and target points in the same reference as the apparatus images, thus allowing the calculation of the coordinates necessary to align the ruler or stereotaxic arc in each trajectory. Even in the most ideal case, this process is not perfect and will contribute to the final error of each trajectory. In summary, the steps of fixing the device, transporting the patient to the CT scanner, and performing image fusion are significant sources of both surgical errors and increased operative time in procedures based on stereotactic devices.
+The alignment of the preoperative MRI with the intraoperative CT, in the case of SEEG surgery, allows the planning performed on the MRI to be accurately transferred to the CT acquired with the  stereotactic apparatus. In this way, the result of the fusion is the planning of the surgery, containing entry and target points in the same reference as the apparatus images, thus allowing the calculation of the coordinates necessary to align the ruler or  stereotactic arc in each trajectory. Even in the most ideal case, this process is not perfect and will contribute to the final error of each trajectory. In summary, the steps of fixing the device, transporting the patient to the CT scanner, and performing image fusion are significant sources of both surgical errors and increased operative time in procedures based on stereotactic devices.
 
 \subsection{Robot-based Surgeries}
 
@@ -215,7 +215,7 @@ Renishaw's Neuromate, introduced in 1998, was the first commercially available r
 Neuromate was the first commercially available robot for neurosurgery, but its adoption faces significant limitations. A major constraint is the requirement for a dedicated operating room, as the system is not designed for mobility between rooms. This complicates hospital logistics and often prevents acquisition due to infrastructure demands. Additionally, Neuromate features only 5 degrees of freedom (DOF), making it an under-actuated system with reduced mobility and positioning capabilities compared to conventional 6-DOF robotic platforms \cite{kajita2015installation}.
 
 % cirq
-The Cirq robotic system is used with a full neuronavigation system. A device with reflective spheres is fixed to the robot's flange. This device is viewed by an infrared stereo camera and the position of the tool is calculated. Its adjustment is done semi-automatically, where the surgeon approaches the robot to the desired position and the robot adjusts itself with an actuator fixed to its flange. The neuronavigator is used to operate this system, which has: a camera carriage; a screen carriage; and a robotic manipulator fixed to the operating table. Combined with other devices present in the operating room, these three devices bring difficulties in logistics and in organizing the space in the room compared to systems that have only one carriage.
+% The Cirq robotic system is used with a full neuronavigation system. A device with reflective spheres is fixed to the robot's flange. This device is viewed by an infrared stereo camera and the position of the tool is calculated. Its adjustment is done semi-automatically, where the surgeon approaches the robot to the desired position and the robot adjusts itself with an actuator fixed to its flange. The neuronavigator is used to operate this system, which has: a camera carriage; a screen carriage; and a robotic manipulator fixed to the operating table. Combined with other devices present in the operating room, these three devices bring difficulties in logistics and in organizing the space in the room compared to systems that have only one carriage.
 
 ROSA ONE Brain is not collaborative. In other words, even though it is designed to perform a task together with the surgeon, ROSA does not feature sensors that are present in collaborative systems, such as measuring joint torque, and collision detection with automatic braking. This aspect makes ROSA a conventional robot applied to collaborative tasks, putting doctor and patient higher risk level compared to collaborative systems. Yara, the system proposed in this project, integrates collaborative robots, validated worldwide for tasks that involve joint operations with humans, ensuring the surgeon's and patient's safety.
 
