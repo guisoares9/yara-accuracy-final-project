@@ -8,7 +8,7 @@
 % TODO: table
 The literature indicates that frame-based SEEG procedures can achieve a maximum entry point error (EPE) of 7.1 mm and target point error (TPE) of 8.5 mm, as documented in \cite{girgis2020superior}. Some studies have observed lower average errors, with EPE values of 1.51 mm and TPE values of 1.59 mm, which may be related to variations in surgical technique, image fusion accuracy, or other procedural factors. Robotic-assisted SEEG procedures have demonstrated comparable accuracy, with reported EPE and TPE values of 1.38 mm and 1.54 mm, respectively \cite{zheng2021robot}. The meta-analysis presented in \cite{vasconcellos2023robotic} compared four robots, showing slightly greater TPE for ROSA and Neuromate than for other systems. In terms of operative duration, robotic-assisted surgeries have been shown to be more efficient, with an average time of 127 minutes compared to 152 minutes for frame-based methods \cite{zheng2021robot}.
 
-Regarding this study, the conical targets phantom focused on evaluating the target error caused by intrinsic sources. These sources are defined as the internal aspects of the systems that can generate inaccuracies, such as the robot's kinematics, the end effector tool tolerances, robot cart movements and vibrations, and the registration method. Since no electrode insertion was performed, errors related to the surgical procedure, such as brain shift and electrode bending, were not present in the results. The phantom tests resulted in an average TPE of 1.8 mm, which are comparable to the values reported in the literature for robotic-assisted SEEG procedures.
+Regarding this study, the conical targets phantom focused on evaluating the target error caused by intrinsic sources. These sources are defined as the internal aspects of the systems that can generate inaccuracies, such as the robot's kinematics, the EF tool tolerances, robot cart movements and vibrations, and the registration method. Since no electrode insertion was performed, errors related to the surgical procedure, such as brain shift and electrode bending, were not present in the results. The phantom tests resulted in an average TPE of 1.8 mm, which are comparable to the values reported in the literature for robotic-assisted SEEG procedures.
 
 The synthetic brain phantom test was designed to assess the overall system accuracy by incorporating both intrinsic and extrinsic sources of error in a controlled environment. Extrinsic factors include procedural elements such as electrode bending, manual depth measurement inaccuracies, and interactions between the electrode and the synthetic brain material. The results indicated an average EPE of 1.3 mm and TPE of 3.1 mm. While the EPE is consistent with values reported for robotic-assisted SEEG procedures in the literature, the slightly elevated TPE may be attributed to these additional extrinsic factors, particularly the friction and adherence between the electrode and the synthetic brain, which could have contributed to deviations during insertion.
 
@@ -26,14 +26,12 @@ The simulation of the robotic-assisted method using the synthetic brain in OR (S
 \begin{table}[htbp]
 \centering
 \label{tab:accuracy}
-\begin{tabular}{l | c | c | c | c}
-    
-    \textbf{Metric} & \textbf{Conical mock-OR} & \textbf{Synthetic mock-OR} & \multicolumn{2}{c}{\textbf{Synthetic OR}} \\
-    \cline{4-5}
-    & & & \textbf{Frame-based} & \textbf{Robotic-assisted} \\
-    EPE (mm) & - & $1.3 \pm 0.3$ & $2.8 \pm 0.3$ & $3.1 \pm 0.3$ \\
-    TPE (mm) & $1.8 \pm 0.3$ & $3.1 \pm 0.3$ & $12.9 \pm 0.3$ & $5.8 \pm 0.3$ \\
-    
+\begin{tabular}{l|c:c:c|c} % use ':' for dashed verticals (arydshln)
+    \textbf{Metric} & \multicolumn{2}{c|}{\textbf{Mock-OR}} & \multicolumn{2}{c}{\textbf{OR}} \\
+    \cline{2-5}
+    & \textbf{Conical} & \textbf{Synthetic} & \textbf{Robotic-assisted} & \textbf{Frame-based} \\
+    EPE (mm) & - & $1.3 \pm 0.3$ &  $3.1 \pm 0.3$ & $2.8 \pm 0.3$ \\
+    TPE (mm) & $1.8 \pm 0.3$ & $3.1 \pm 0.3$ & $5.8 \pm 0.3$ & $12.9 \pm 0.3$ \\
 \end{tabular}
 \caption{Summary of evaluated accuracy for SEEG using conical targets, synthetic brain, and synthetic brain in OR with frame-based and robotic-assisted methods.}
 \end{table}

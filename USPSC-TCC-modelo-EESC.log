@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.8.23)  25 OCT 2025 10:31
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.8.23)  25 NOV 2025 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2030,16 +2030,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
+Underfull \vbox (badness 6173) has occurred while \output is active []
+
+ [27]
 File: USPSC-img/robots_enhanced.png Graphic file (type bmp)
 <USPSC-img/robots_enhanced.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (0.61595pt too wide) in paragraph at lines 212--213
+[]\T1/lmr/m/n/12 The frame lim-i-ta-tions mo-ti-vated the de-vel-op-ment and ad
+op-tion of frame-less robotic
+ []
 
- [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28])
-[29]
+Overfull \hbox (5.02885pt too wide) in paragraph at lines 214--215
+\T1/lmr/m/n/12 er-ror of 1.77 mm for the mod-ern robot-assisted work-flow ([][]
+CAR-DI-NALE FRANCESCO MD
+ []
+
+Missing character: There is no ‑ ("2011) in font ec-lmr12!
+Missing character: There is no ‑ ("2011) in font ec-lmr12!
+[28]) [29]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.aux'.
 
  (./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex [30
@@ -2099,12 +2109,7 @@ ype bmp)
 <USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png>
 File: USPSC-img/synthetic-brain-or-robot-ct.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-or-robot-ct.png>
-
-
-LaTeX Warning: Reference `sec:stereotactics' on page 41 undefined on input line
- 220.
-
-[41]) [42]
+ [41]) [42]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux'.
 
  (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.tex
@@ -2116,9 +2121,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (55.20985pt too wide) in paragraph at lines 29--38
- [][] 
- []
+
+! Package array Error:  Illegal pream-token (:): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \begin{tabular}{l|c:c:c|c}
+                                % use ':' for dashed verticals (arydshln)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (:): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \begin{tabular}{l|c:c:c|c}
+                                % use ':' for dashed verticals (arydshln)
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 ) [44] (./USPSC-TCC-modelo-EESC.bbl
 
@@ -2152,19 +2177,12 @@ AED: lastpage setting LastPage
 (./USPSC-TA-Textual/USPSC-Cap1-Introducao.aux)
 (./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.aux)
 (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux)
-(./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux)) ) 
 Here is how much of TeX's memory you used:
- 43721 strings out of 476191
- 937958 string characters out of 5812072
+ 43720 strings out of 476191
+ 937940 string characters out of 5812072
  1246025 words of memory out of 5000000
- 63673 multiletter control sequences out of 15000+600000
+ 63672 multiletter control sequences out of 15000+600000
  515499 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,13n,94p,1294b,1125s stack positions out of 5000i,500n,10000p,200000b,80000s
