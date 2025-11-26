@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.8.23)  25 NOV 2025 19:33
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.8.23)  26 NOV 2025 10:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1989,12 +1989,9 @@ Missing character: There is no ’ ("2019) in font ec-lmr12!
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-Overfull \hbox (7.00812pt too wide) in paragraph at lines 56--57
-[]\T1/lmr/m/n/12 Among pa-tients with epilepsy, ap-prox-i-mately 40% ex-pe-ri-e
-nce drug-resistant seizures,
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[22]
+ [22]
 File: USPSC-img/eeg-ecog-seeg.png Graphic file (type bmp)
 <USPSC-img/eeg-ecog-seeg.png>
 
@@ -2019,9 +2016,6 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [24]
 File: USPSC-img/leksell.png Graphic file (type bmp)
 <USPSC-img/leksell.png>
-
-Underfull \vbox (badness 1210) has occurred while \output is active []
-
  [25]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2030,26 +2024,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-Underfull \vbox (badness 6173) has occurred while \output is active []
-
- [27]
 File: USPSC-img/robots_enhanced.png Graphic file (type bmp)
 <USPSC-img/robots_enhanced.png>
 
-Overfull \hbox (0.61595pt too wide) in paragraph at lines 212--213
+Underfull \vbox (badness 6173) has occurred while \output is active []
+
+ [27]
+Overfull \hbox (0.61595pt too wide) in paragraph at lines 211--212
 []\T1/lmr/m/n/12 The frame lim-i-ta-tions mo-ti-vated the de-vel-op-ment and ad
 op-tion of frame-less robotic
  []
 
-
-Overfull \hbox (5.02885pt too wide) in paragraph at lines 214--215
-\T1/lmr/m/n/12 er-ror of 1.77 mm for the mod-ern robot-assisted work-flow ([][]
-CAR-DI-NALE FRANCESCO MD
- []
-
 Missing character: There is no ‑ ("2011) in font ec-lmr12!
 Missing character: There is no ‑ ("2011) in font ec-lmr12!
-[28]) [29]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28])
+[29]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.aux'.
 
  (./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.tex [30
@@ -2072,44 +2064,43 @@ File: USPSC-img/conical-targets-phantom.png Graphic file (type bmp)
  [35]
 File: USPSC-img/conical-targets-phantom-se-robot.png Graphic file (type bmp)
 <USPSC-img/conical-targets-phantom-se-robot.png>
-
-Underfull \vbox (badness 1484) has occurred while \output is active []
-
- [36]
 File: USPSC-img/phantom-rs-sample.png Graphic file (type bmp)
 <USPSC-img/phantom-rs-sample.png>
+ [36]
 File: USPSC-img/synthetic-brain-phantom.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-phantom.png>
+ [37]
 File: USPSC-img/synthetic-brain-phantom-se-robot.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-phantom-se-robot.png>
 
-[37]
-Overfull \hbox (3.78667pt too wide) in paragraph at lines 152--153
+Overfull \hbox (3.78667pt too wide) in paragraph at lines 150--151
 []\T1/lmr/m/n/12 Figure [][]8[][] shows the syn-thetic model de-vel-oped. The c
 om-par-i-son be-tween the planned
  []
 
-[38]
 File: USPSC-img/sintetic-brain-ct.png Graphic file (type bmp)
 <USPSC-img/sintetic-brain-ct.png>
 File: USPSC-img/synthetic-brain-phantom-or-leksell.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-phantom-or-leksell.png>
+[38]
 File: USPSC-img/synthetic-brain-phantom-or-robot.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-phantom-or-robot.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2435) has occurred while \output is active []
 
  [39]
 File: USPSC-img/synthetic-brain-or-ct-leksell.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-or-ct-leksell.png>
-
-[40]
 File: USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png Graphic file (t
 ype bmp)
 <USPSC-img/synthetic-brain-phantom-or-robot-electrodes.png>
 File: USPSC-img/synthetic-brain-or-robot-ct.png Graphic file (type bmp)
 <USPSC-img/synthetic-brain-or-robot-ct.png>
- [41]) [42]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[40] [41]) [42]
 \openout2 = `USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux'.
 
  (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.tex
@@ -2128,20 +2119,8 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \begin{tabular}{l|c:c:c|c}
-                                % use ':' for dashed verticals (arydshln)
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (:): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 \begin{tabular}{l|c:c:c|c}
-                                % use ':' for dashed verticals (arydshln)
+l.32     \begin{tabular}{lcc|c:c}
+                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2179,12 +2158,12 @@ AED: lastpage setting LastPage
 (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux)
 (./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux)) ) 
 Here is how much of TeX's memory you used:
- 43720 strings out of 476191
- 937940 string characters out of 5812072
- 1246025 words of memory out of 5000000
- 63672 multiletter control sequences out of 15000+600000
- 515499 words of font info for 67 fonts, out of 8000000 for 9000
+ 43738 strings out of 476191
+ 938311 string characters out of 5812072
+ 1246111 words of memory out of 5000000
+ 63688 multiletter control sequences out of 15000+600000
+ 520555 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,13n,94p,1294b,1125s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,13n,94p,1269b,1125s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on USPSC-TCC-modelo-EESC.pdf (50 pages).
