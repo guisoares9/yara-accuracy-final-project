@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.8.23)  26 NOV 2025 10:17
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2025.8.23)  26 NOV 2025 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2156,7 +2156,11 @@ AED: lastpage setting LastPage
 (./USPSC-TA-Textual/USPSC-Cap1-Introducao.aux)
 (./USPSC-TA-Textual/USPSC-Cap2-Desenvolvimento.aux)
 (./USPSC-TA-Textual/USPSC-Cap3-Conclusao.aux)
-(./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux)) ) 
+(./USPSC-TA-PosTextual/USPSC-IndicesRemissivos.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  43738 strings out of 476191
  938311 string characters out of 5812072
